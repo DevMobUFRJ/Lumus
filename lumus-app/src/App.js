@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import CardComponent from './Components/CardComponent';
+import Faq from './Components/Faq'; 
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import img1 from './Assets/Images/6082664-removebg-preview 1.png';
 import img2 from './Assets/Images/removal 4.png';
@@ -83,6 +85,9 @@ const Home = () => {
           →
         </motion.button>
       </div>
+      <div style={{ position: 'absolute', top: '20px', right: '20px' }}>
+        <Link to="/Faq">Go to FAQ</Link>
+      </div>
     </motion.div>
   );
 };
@@ -92,9 +97,11 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Faq" element={<Faq />} />
       </Routes>
     </Router>
   );
 };
+
 
 export default App;
