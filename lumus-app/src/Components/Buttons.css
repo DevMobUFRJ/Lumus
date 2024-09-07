@@ -13,5 +13,5 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: red;
+    width: 80%;
 }

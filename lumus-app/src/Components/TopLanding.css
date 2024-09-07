@@ -1,0 +1,15 @@
+.top-landing-container {
+    width: 100vw;
+}
+
+.card-container {
+    width: 10rem;
+    width: 100%;
+    border-radius: 4rem;
+    border: 0.05rem solid black;
+}
+
+.card {
+    width: 100%;
+    padding: 1rem;
+}
