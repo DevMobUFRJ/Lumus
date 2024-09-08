@@ -3,13 +3,21 @@
 }
 
 .card-container {
-    width: 10rem;
     width: 100%;
-    border-radius: 4rem;
+    height: 10rem;
+    border-radius: 2rem;
     border: 0.05rem solid black;
+    margin-top: 2rem;
 }
 
 .card {
     width: 100%;
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.8rem;
+}
+
+.card-text {
+    font-size: 1.35rem;
 }
