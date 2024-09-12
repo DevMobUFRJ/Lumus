@@ -30,3 +30,27 @@
     font-size: 1.35rem;
     font-weight: 600;
 }
+
+.board-box {
+    margin-top: 3.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-boards {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+}

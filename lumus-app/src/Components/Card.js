@@ -1,5 +1,5 @@
 import React from 'react';
-import './TopLanding.css';
+import './MainPage.css';
 
 const Card = ({image, width, height, borderRadius, border, text}) => {
     return (

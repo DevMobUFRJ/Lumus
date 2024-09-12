@@ -1,8 +1,9 @@
 import React from 'react';
 import StaticButton from './Buttons';
+import Board from './Board';
 import imgtest from '../Assets/Images/Union.png';
 import lampVector from '../Assets/Images/LampVector.png';
-import './TopLanding.css';
+import './MainPage.css';
 import Card from './Card';
 
 const TopLanding = () => {
@@ -37,6 +38,37 @@ const TopLanding = () => {
                   />
                 </div>
             </div>
+        </div>
+
+        <div className='board-box'>
+          <div className='top-boards'>
+            <Board
+              backgroundColor="orange"
+              width="12rem"
+              height="12rem"
+              borderRadius="1.4rem"
+              border="none"
+              text="Light Match"
+              fontSize="1.5rem"
+              padding="1rem"
+              textDivWidth="4rem"
+            />
+
+            <Board
+              backgroundColor="white"
+              width="12rem"
+              height="12rem"
+              borderRadius="1.4rem"
+              border="3px solid orange"
+              text="Glossário"
+              fontSize="1.5rem"
+              padding="1rem"
+            />
+          </div>
+
+          <div className='bottom-board'>
+
+          </div>
         </div>
     </div>
   );
