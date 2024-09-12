@@ -6,7 +6,7 @@
     width: 100%;
     height: 10rem;
     border-radius: 2rem;
-    border: 0.05rem solid black;
+    border: 0.05rem solid #d3d3d3;
     margin-top: 2rem;
 }
 
@@ -18,6 +18,15 @@
     padding-bottom: 0.8rem;
 }
 
+.button-container {
+    width: '80%';
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-left: 1.8rem;
+}
+
 .card-text {
     font-size: 1.35rem;
+    font-weight: 600;
 }

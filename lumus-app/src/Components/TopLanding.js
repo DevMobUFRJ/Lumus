@@ -17,17 +17,17 @@ const TopLanding = () => {
         
         <div className='card-container'
           style={{
-            backgroundImage: lampVector,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            borderRadius: '10px',
+            backgroundImage: `url(${lampVector})`,
+            backgroundSize: '40%',
+            backgroundPosition: 'left',
+            backgroundRepeat: 'no-repeat',
+            borderRadius: '1.4rem',
             overflow: 'hidden',
             width: '100%',
-            height: '300px'
         }}>
             <div className='card'>
                 <p className='card-text'>Conheça o projeto <b>Atitudes Sustentáveis!</b></p>
-                <div style={{width: '80%', display: 'flex', alignItems: 'center', justifyContent: 'right'}}>
+                <div className='button-container'>
                   <StaticButton 
                     text="Saiba mais" 
                     buttonWidth="9rem" 
