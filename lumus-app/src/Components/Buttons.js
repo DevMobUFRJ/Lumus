@@ -9,7 +9,8 @@ const StaticButton = ({
   buttonBorderRadius, 
   text, 
   backgroundColor, 
-  border
+  border,
+  buttonBorder
 }) => {
   return (
     <div 
@@ -27,7 +28,8 @@ const StaticButton = ({
           backgroundColor: backgroundColor,
           display: 'flex', 
           alignItems: 'center', 
-          justifyContent: 'center' 
+          justifyContent: 'center', 
+          border: buttonBorder ? buttonBorder : '2px solid black'
         }}
       >
         {image ? (

@@ -1,5 +1,11 @@
+.main-page-container {
+    height: 50rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+
 .top-landing-container {
-    width: 100vw;
+    width: 100%;
 }
 
 .card-container {

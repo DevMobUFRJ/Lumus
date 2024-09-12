@@ -19,7 +19,7 @@ const TopLanding = () => {
         <div className='card-container'
           style={{
             backgroundImage: `url(${lampVector})`,
-            backgroundSize: '40%',
+            backgroundSize: '43%',
             backgroundPosition: 'left',
             backgroundRepeat: 'no-repeat',
             borderRadius: '1.4rem',
@@ -28,13 +28,15 @@ const TopLanding = () => {
         }}>
             <div className='card'>
                 <p className='card-text'>Conheça o projeto <b>Atitudes Sustentáveis!</b></p>
-                <div className='button-container'>
+                <div className='button-container'
+                style={{marginTop: '-0.6rem'}}>
                   <StaticButton 
                     text="Saiba mais" 
                     buttonWidth="9rem" 
                     buttonHeight="3rem" 
                     buttonBorderRadius="2rem" 
                     backgroundColor="orange" 
+                    buttonBorder="none"
                   />
                 </div>
             </div>
@@ -44,8 +46,8 @@ const TopLanding = () => {
           <div className='top-boards'>
             <Board
               backgroundColor="orange"
-              width="12rem"
-              height="12rem"
+              width="11rem"
+              height="11.5rem"
               borderRadius="1.4rem"
               border="none"
               text="Light Match"
@@ -56,8 +58,8 @@ const TopLanding = () => {
 
             <Board
               backgroundColor="white"
-              width="12rem"
-              height="12rem"
+              width="11rem"
+              height="11.5rem"
               borderRadius="1.4rem"
               border="3px solid orange"
               text="Glossário"
