@@ -46,7 +46,7 @@ const TopLanding = () => {
         </div>
 
         <div className='board-box'>
-          <div className='top-boards'>
+          <div id='top-boards'>
             <Board
               backgroundColor="orange"
               width="11rem"
@@ -71,8 +71,17 @@ const TopLanding = () => {
             />
           </div>
 
-          <div className='bottom-board'>
-
+          <div id='bottom-board'>
+            <Board
+              backgroundColor="white"
+              width="100%"
+              height="11.5rem"
+              borderRadius="1.4rem"
+              border="3px solid orange"
+              text="FAQ"
+              fontSize="1.5rem"
+              padding="1rem"
+            />
           </div>
         </div>
     </div>
