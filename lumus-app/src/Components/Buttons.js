@@ -10,11 +10,13 @@ const StaticButton = ({
   text, 
   backgroundColor, 
   border,
-  buttonBorder
+  buttonBorder,
+  containerId
 }) => {
   return (
     <div 
-      className='button-container' 
+      className='button-container'
+      id={containerId ? containerId : 'button-container'} 
       style={{ 
         width: buttonWidth, 
         height: buttonHeight, 

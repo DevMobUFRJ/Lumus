@@ -9,12 +9,15 @@ import Card from './Card';
 const TopLanding = () => {
   return (
     <div className='top-landing-container'>
-        <StaticButton 
-          image={imgtest}
-          buttonWidth={'50%'}
-          buttonHeight={'4.2rem'}
-          buttonBorderRadius={'3rem'}
+        <div id='top-button-container'>
+          <StaticButton 
+            image={imgtest}
+            buttonWidth={'50%'}
+            buttonHeight={'4.2rem'}
+            buttonBorderRadius={'3rem'}
+            containerId={'top-landing-button'}
           />
+        </div>
         
         <div className='card-container'
           style={{
