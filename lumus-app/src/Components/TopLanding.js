@@ -1,7 +1,7 @@
 import React from 'react';
 import StaticButton from './Buttons';
 import Board from './Board';
-import imgtest from '../Assets/Images/Union.png';
+import mainPageHeader from '../Assets/Images/mainPageHeader.svg';
 import lampVector from '../Assets/Images/LampVector.png';
 import './MainPage.css';
 import Card from './Card';
@@ -10,13 +10,7 @@ const TopLanding = () => {
   return (
     <div className='top-landing-container'>
         <div id='top-button-container'>
-          <StaticButton 
-            image={imgtest}
-            buttonWidth={'50%'}
-            buttonHeight={'4.2rem'}
-            buttonBorderRadius={'3rem'}
-            containerId={'top-landing-button'}
-          />
+          <img src={mainPageHeader} />
         </div>
         
         <div className='card-container'
@@ -34,7 +28,7 @@ const TopLanding = () => {
                 <div className='button-container'
                 style={{marginTop: '-0.6rem'}}>
                   <StaticButton 
-                    text="Saiba mais" 
+                    text="Saiba mais →" 
                     buttonWidth="9rem" 
                     buttonHeight="3rem" 
                     buttonBorderRadius="2rem" 

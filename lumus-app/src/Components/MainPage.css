@@ -1,5 +1,5 @@
 .main-page-container {
-    height: 50rem;
+    height: 60rem;
     padding-left: 1.4rem;
     padding-right: 1.4rem;
 }
@@ -73,6 +73,7 @@
 
 #top-button-container {
     width: 100%;
+    margin-top: 0.3rem;
 }
 
 #top-landing-button {
@@ -92,4 +93,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+
+#bottom_logos {
+    margin-top: 3rem;
+    width: 100%;
 }

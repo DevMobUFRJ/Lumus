@@ -1,5 +1,6 @@
 import React from 'react';
 import lampVector from '../Assets/Images/LampVector.png';
+import bottomMainLogos from '../Assets/Images/Frame470.svg';
 
 const BottomLanding = ({
     marginTop
@@ -32,7 +33,11 @@ const BottomLanding = ({
                     <div style={{backgroundColor: 'red', width: '2rem', borderRadius: '1rem', height: '2rem'}}></div>
                 </div>
             </div>
-        </div>
+          </div>
+          <div id='bottom_logos'>
+            <img src={bottomMainLogos}
+                style={{ width: '100%'}}/>
+          </div>
     </div>
 
   );

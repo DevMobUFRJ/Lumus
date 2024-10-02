@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import CardComponent from './Components/CardComponent';
+import StaticButton from './Components/Buttons';
 import { motion } from 'framer-motion';
 import img1 from './Assets/Images/6082664-removebg-preview 1.png';
 import img2 from './Assets/Images/removal 4.png';
 import img3 from './Assets/Images/JEMA_GER_1639-09-removebg-preview 1.png';
+import imgtest from './Assets/Images/Union.png';
 import '../src/App.css';
+import MainPage from './Components/MainPage';
 
 const cardData = [
   {
@@ -37,54 +40,9 @@ const Home = () => {
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
-      style={{
-        display: 'flex',
-        height: '100vh',
-        justifyContent: 'center',
-        alignItems: 'center',
-        position: 'relative',
-        width: '100%',
-        padding: '0 10px',
-      }}
-    >
-      {cardData.map((card, index) => (
-        <CardComponent
-          key={index}
-          image={card.image}
-          title={card.title}
-          description={card.description}
-          color={card.color}
-          onClick={handleNext}
-          isActive={index === currentIndex}
-        />
-      ))}
-      <div style={{ position: 'absolute', bottom: '20px', right: '20px' }}>
-        <motion.button
-          onClick={handleNext}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          style={{
-            backgroundColor: '#fff',
-            border: 'none',
-            borderRadius: '50%',
-            width: '40px',
-            height: '40px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            cursor: 'pointer',
-          }}
-        >
-          →
-        </motion.button>
-      </div>
-    </motion.div>
-  );
+    <MainPage
+    />
+  )
 };
 
 const App = () => {
