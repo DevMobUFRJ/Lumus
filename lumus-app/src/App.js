@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
-import CardComponent from './Components/CardComponent';
+import CardComponent from './Components/CardComponent/CardComponent';
+import Kitchen from './pages/lightMatchKitchen/Kitchen';
+import Room from './pages/lightMatchRoom/Room';
+import Bedroom from './pages/lightMatchBedroom/Bedroom';
 import { motion } from 'framer-motion';
 import img1 from './Assets/Images/6082664-removebg-preview 1.png';
 import img2 from './Assets/Images/removal 4.png';
@@ -91,7 +94,9 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+      <Route path="/" element={<Room/>} />
+        <Route path="/cozinha" element={<Kitchen/>} />
+        <Route path="/quarto" element={<Bedroom/>} />
       </Routes>
     </Router>
   );

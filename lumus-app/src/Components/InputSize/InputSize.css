@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+#divPrincipalInputSize{
+    width: 42%;
+    
+}
+
+#iconInfo{
+    width: 26px;
+    height: 26px;
+}
+
+#inputSize{
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    margin-top: 1%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    outline: none;
+}
+
+#divInputSize{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 3rem;
+    border: 2.5px solid #DBD7CE;  
+    border-radius: 50px;
+    margin-top: 1%;
+    overflow: hidden;
+    padding: 0 1rem 0 1rem;
+}

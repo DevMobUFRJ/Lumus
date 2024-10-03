@@ -1,0 +1,16 @@
+
+
+#divLogo{
+    border: 1px solid #AFACA5;  
+    border-radius: 50px;
+    height: 4rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38vw;
+    position: relative;
+    right: 28%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}

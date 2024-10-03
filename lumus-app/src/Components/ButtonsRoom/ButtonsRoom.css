@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+#DivReader{
+    padding: 0% 4% 0% 4%;
+}
+
+#DivReader h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scrollbar-width: none; 
+    gap: 5%;
+    width: 100vw;
+    padding: 0% 6% 0% 0%;
+    
+
+
+}
+
+#buttons button{
+    border-radius: 99px;
+    height: 2.8rem;
+    border: none;
+    outline: none;
+
+    font-weight: 600;
+    width: 47%;
+    flex-shrink: 0; /* Impede que os botões encolham */
+}
