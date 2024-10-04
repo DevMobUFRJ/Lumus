@@ -127,3 +127,34 @@
     border-radius: 5rem;
     height: 2.8rem;
 }
+
+.board-image-container {
+    width: 100%;
+    height:50%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-left: -0.15rem;
+    margin-top: 0.5rem;
+}
+
+.board-button {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid black;
+    border-radius: 4rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.board-image {
+    width: 120%;
+}
+
+.board-text {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}

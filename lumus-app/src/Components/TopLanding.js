@@ -3,6 +3,9 @@ import StaticButton from './Buttons';
 import Board from './Board';
 import mainPageHeader from '../Assets/Images/mainPageHeader.svg';
 import lampVector from '../Assets/Images/LampVector.png';
+import lightMatch from '../Assets/Images/nav-lightmatch.svg';
+import glossario from '../Assets/Images/nav-glossario.svg';
+import faq from '../Assets/Images/nav-faq.svg';
 import './Home.css';
 import Card from './Card';
 
@@ -51,6 +54,7 @@ const TopLanding = () => {
               fontSize="1.5rem"
               padding="1rem"
               textDivWidth="4rem"
+              image={lightMatch}
             />
 
             <Board
@@ -62,6 +66,7 @@ const TopLanding = () => {
               text="Glossário"
               fontSize="1.5rem"
               padding="1rem"
+              image={glossario}
             />
           </div>
 
@@ -75,6 +80,7 @@ const TopLanding = () => {
               text="FAQ"
               fontSize="1.5rem"
               padding="1rem"
+              image={faq}
             />
           </div>
         </div>

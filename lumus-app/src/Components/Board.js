@@ -9,12 +9,14 @@ const Board = ({image, backgroundColor, width, height, borderRadius, border, tex
       >
         <div className='board'
         style={{padding: padding}}>
-            <div style={{width: '100%', height:'50%', display: 'flex', alignItems: 'left', justifyContent: 'left', backgroundColor:'red'}}>
-                <img 
-                    src={image} 
-                />
+            <div className='board-image-container'>
+                <div className='board-button'>
+                  <img className='board-image'
+                      src={image} 
+                  />
+                </div>
             </div>
-            <div style={{width: textDivWidth ? textDivWidth : '100%', height: '50%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end'}}>
+            <div className='board-text' style={{width: textDivWidth ? textDivWidth : '100%'}}>
                 <p style={{fontSize: fontSize}}>{text}</p>
             </div>
         </div>
