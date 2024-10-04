@@ -1,5 +1,5 @@
 import React from 'react';
-import './MainPage.css';
+import './Home.css';
 
 const Board = ({image, backgroundColor, width, height, borderRadius, border, text, fontSize, padding, textDivWidth}) => {
     return (

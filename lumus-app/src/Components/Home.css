@@ -99,3 +99,20 @@
     margin-top: 3rem;
     width: 100%;
 }
+
+#home-nav {
+    width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 4.32rem;
+    border-radius: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.home-nav-button {
+    height: 90%;
+    margin-top: 0.15rem;
+}

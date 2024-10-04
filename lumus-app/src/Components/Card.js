@@ -1,5 +1,5 @@
 import React from 'react';
-import './MainPage.css';
+import './Home.css';
 
 const Card = ({image, width, height, borderRadius, border, text}) => {
     return (

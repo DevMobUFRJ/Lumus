@@ -3,7 +3,7 @@ import StaticButton from './Buttons';
 import Board from './Board';
 import mainPageHeader from '../Assets/Images/mainPageHeader.svg';
 import lampVector from '../Assets/Images/LampVector.png';
-import './MainPage.css';
+import './Home.css';
 import Card from './Card';
 
 const TopLanding = () => {

@@ -8,7 +8,7 @@ import img2 from './Assets/Images/removal 4.png';
 import img3 from './Assets/Images/JEMA_GER_1639-09-removebg-preview 1.png';
 import imgtest from './Assets/Images/Union.png';
 import '../src/App.css';
-import MainPage from './Components/MainPage';
+import HomePage from './Components/Home';
 
 const cardData = [
   {
@@ -40,7 +40,7 @@ const Home = () => {
   };
 
   return (
-    <MainPage
+    <HomePage
     />
   )
 };
