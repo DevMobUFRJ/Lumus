@@ -1,6 +1,10 @@
 import React from 'react';
 import lampVector from '../Assets/Images/LampVector.png';
 import bottomMainLogos from '../Assets/Images/Frame470.svg';
+import instagram from '../Assets/Images/instagram-logo.svg';
+import youtube from '../Assets/Images/youtube-logo.svg';
+import tiktok from '../Assets/Images/tiktok-logo.svg';
+import green from '../Assets/Images/green-logo.svg';
 
 const BottomLanding = ({
     marginTop
@@ -24,13 +28,21 @@ const BottomLanding = ({
             <div className='card'>
                 <p className='card-text' style={{fontSize: '1.5rem'}}>Acompanhe nossas redes sociais!</p>
                 <div id='lamp-card-buttons-container'>
-                    <div style={{backgroundColor: 'red', width: '2rem', borderRadius: '1rem', height: '2rem'}}></div>
+                    <div className='cardButtonImageContainer'>
+                      <img src={instagram}></img>
+                    </div>
                 
-                    <div style={{backgroundColor: 'red', width: '2rem', borderRadius: '1rem', height: '2rem'}}></div>
+                    <div className='cardButtonImageContainer'>
+                      <img src={youtube}></img>
+                    </div>
 
-                    <div style={{backgroundColor: 'red', width: '2rem', borderRadius: '1rem', height: '2rem'}}></div>
+                    <div className='cardButtonImageContainer'>
+                      <img src={tiktok}></img>
+                    </div>
 
-                    <div style={{backgroundColor: 'red', width: '2rem', borderRadius: '1rem', height: '2rem'}}></div>
+                    <div className='cardButtonImageContainer'>
+                      <img src={green}></img>
+                    </div>
                 </div>
             </div>
           </div>

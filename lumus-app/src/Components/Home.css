@@ -93,6 +93,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-left: -0.5rem;
 }
 
 #bottom_logos {
@@ -115,4 +116,14 @@
 .home-nav-button {
     height: 90%;
     margin-top: 0.15rem;
+}
+
+.cardButtonImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #EEEEEE;
+    width: 2.8rem;
+    border-radius: 5rem;
+    height: 2.8rem;
 }
