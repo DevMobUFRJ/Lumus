@@ -1,18 +1,53 @@
 // src/pages/Faq.js
-
+import arrowLeft from '../Assets/Images/ArrowLeft.png'
+import plus from '../Assets/Images/plus.png'
+import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
+import './Faq.css';
 
 const Faq = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
+  const navigate = useNavigate();
 
   const toggleExpand = (index) => {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
 
+  const handleBackClick = () => {
+    navigate('/');  // Navega para a rota raiz "/"
+  };
+
+
+
+
   const faqs = [
     {
       question: "As embalagens das lâmpadas fornecem as informações sobre as propriedades lumínicas que aparecem no glossário do Lumos?",
-      answer: "Sim, as embalagens das lâmpadas geralmente contêm informações sobre suas propriedades lumínicas, como intensidade e distribuição da luz, que são explicadas no glossário do Lumos."
+      answer: `Informações que embalagens devem conter são regulamentadas no Brasil pelo INMETRO - Instituto Nacional de Metrologia, Qualidade e Tecnologia.
+                  Atualmente, as portarias emitidas por essa autarquia federal contemplam a obrigatoriedade dessas informações nas embalagens de lâmpadas e isso é seguido à risca pelos fabricantes.
+                  No entanto, atenção! Nem todas as fontes de luz normalmente usadas nas residências são consideradas lâmpadas.
+                  É o caso dos painéis de LED.
+                  LED — Luz emitida por diodos — pode adquirir qualquer formato de bulbo, inclusive assumir a forma de uma luminária.
+                  Nesse caso, pode ser que o fabricante não te informe as propriedades, pois é comum a informação só ser dada quando obrigatória.
+                  
+                  O fabricante também pode omitir informação não obrigatória, quando ela não é relevante para o
+                  produto. O grau de abertura de lâmpadas difusas
+                  é um exemplo disso. Como não há risco de
+                  ofuscamento, a informação não é passada.
+                  Acontece, por vezes, em lâmpadas com grau igual
+                  ou superior a 1200.
+
+                  O produto também pode vir sem essas
+                  informações se não tiver sido produzido no Brasil
+                  e não tiver passado pelo processo habitual de
+                  importação. Nesse caso, escolha outro produto
+                  para garantir a qualidade de seu consumo.
+                  De qualquer forma, se as informações não
+                  estiverem nas embalagens, normalmente elas são
+                  acessadas no site do fabricante, junto as
+                  informações técnicas, pois são informações
+                  requeridas pelos projetistas que trabalha com
+                  iluminação.`
     },
     {
       question: "Posso escolher as lâmpadas por sua eficiência energética (rendimento luminoso)?",
@@ -45,21 +80,34 @@ const Faq = () => {
   ];
 
   return (
-    <div id="main-screen">
-      <h1>FAQ</h1>
+    <div id="main-screen" className="faq-container">
+      <div className="faq-header">
+        <div className="back-button-circle" onClick={handleBackClick}>
+          <img src={arrowLeft} className="back-button" alt="Voltar" />
+        </div>
+        <p className="faq-header-title">FAQ</p>
+      </div>
       <div id="informations">
         {faqs.map((item, index) => (
-          <div key={index} id="row">
-            <p>{item.question}</p>
-            <button 
-              id="plus-icon" 
-              onClick={() => toggleExpand(index)}
-            >
-              {expandedIndex === index ? 'X' : '+'}
-            </button>
+          <div key={index} id="row" className="faq-item">
+            <div className="faq-question">
+              <p className="faq-title-question">{item.question}</p>
+              <button
+                onClick={() => toggleExpand(index)}
+                className="expand-icon"
+              >
+                <img
+                  src={plus}
+                  alt="Abrir"
+                  className={expandedIndex === index ? "rotated" : ""}
+                />
+              </button>
+            </div>
             {expandedIndex === index && (
-              <div className="content">
-                <p>{item.answer}</p>
+              <div className={`content ${expandedIndex === index ? 'expanded' : ''}`}>
+                {item.answer.split('\n').map((line, lineIndex) => (
+                  <p key={lineIndex}>{line.trim()}</p> // Renderiza cada linha em um parágrafo
+                ))}
               </div>
             )}
           </div>

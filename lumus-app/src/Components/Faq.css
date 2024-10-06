@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* Container principal */
+.faq-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Inter", sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Estilos do cabeçalho */
+  .faq-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+  
+  .faq-header .back-button {
+    width: 24px; /* Tamanho da seta */
+    cursor: pointer;
+  }
+
+  .faq-header-title {
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  
+  .back-button-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%; 
+    border: 2px solid #E28E00;
+    margin-right: 24px;
+  }
+  
+  /* Estilo dos itens de FAQ */
+  .faq-item {
+    margin-left: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+  }
+
+  .faq-question {
+    display: grid;
+    grid-template-columns: 1fr 64px;
+    gap: 0 32px;
+    font-weight: 500;
+  }
+
+  .expand-icon{
+    margin-top: 50%;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%; 
+    margin-left: 10%;
+    border: 2px solid #DBD7CE;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.expand-icon img {
+    width: 24px; 
+    height: 24px; 
+    transition: transform 0.6s ease; 
+}
+.rotated {
+    transform: rotate(45deg); /* Rotaciona a imagem 180 graus */
+}
+
+
+/* Conteúdo da resposta */
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-in-out;
+  }
+  
+  /* Quando a resposta está expandida */
+  .content.expanded {
+    max-height: 100%;
+  }
+
+  
+.faq-item:last-child {
+    border-bottom: none;
+  }
+  
+  .faq-item-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .faq-item-title .expand-icon {
+    font-size: 24px;
+    color: #999;
+  }
+  
+  /* Estilos do ícone inferior */
+  .bottom-icons {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 10px 0;
+  }
+  
+  .bottom-icons .icon {
+    font-size: 24px;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .bottom-icons .icon.active {
+    color: #f9a825;
+  }
+  
