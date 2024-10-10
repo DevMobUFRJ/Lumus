@@ -52,8 +52,9 @@ const TopLanding = () => {
               border="none"
               text="Light Match"
               fontSize="1.5rem"
-              padding="1rem"
+              padding="1.3rem"
               textDivWidth="4rem"
+              imgBorder="1px solid black"
               image={lightMatch}
             />
 
@@ -65,7 +66,9 @@ const TopLanding = () => {
               border="3px solid orange"
               text="Glossário"
               fontSize="1.5rem"
-              padding="1rem"
+              padding="1.3rem"
+              imgBorder="1px solid orange"
+              imgColor="orange"
               image={glossario}
             />
           </div>
@@ -79,7 +82,9 @@ const TopLanding = () => {
               border="3px solid orange"
               text="FAQ"
               fontSize="1.5rem"
-              padding="1rem"
+              padding="1.3rem"
+              imgBorder="1px solid orange"
+              imgColor="orange"
               image={faq}
             />
           </div>
