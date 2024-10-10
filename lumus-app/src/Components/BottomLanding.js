@@ -15,6 +15,15 @@ const BottomLanding = ({
        <p id='bottom-landing-text'>Veja alguns dos videos e jogos educativos 
         que disponibilizamos em nossas redes sociais</p>
 
+        <div className='carousel'>
+
+        </div>
+
+        <div className='text-container' id='carousel-text'>
+          <p style={{textDecoration: 'underline'}}>Ver todos</p>
+          <p>→</p>
+        </div>
+
         <div className='card-container'
           style={{
             backgroundImage: `url(${lampVector})`,

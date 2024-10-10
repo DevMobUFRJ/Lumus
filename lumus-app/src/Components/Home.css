@@ -1,7 +1,17 @@
 .main-page-container {
-    height: 60rem;
-    padding-left: 1.4rem;
-    padding-right: 1.4rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 88rem;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-page {
+    width: 90%;
 }
 
 .top-landing-container, .bottom-landing-container {
@@ -102,7 +112,9 @@
 }
 
 #home-nav {
-    width: 96%;
+    width: 85%;
+    position: fixed;
+    bottom: 1rem;
     padding-left: 2%;
     padding-right: 2%;
     height: 4.32rem;
@@ -111,6 +123,7 @@
     flex-direction: row;
     justify-content: space-between;
     border: 1px solid black;
+    background-color: white;
 }
 
 .home-nav-button {
@@ -161,4 +174,29 @@
 .board-text p {
     margin: 0;
     text-align: left;
+}
+
+.carousel {
+    width: 100%;
+    height: 18rem;
+    background-color: red;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#carousel-text {
+    width: 100%;
+    height: 2rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#carousel-text p {
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+    color: orange;
+    cursor: pointer;
 }

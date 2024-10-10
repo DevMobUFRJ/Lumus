@@ -10,11 +10,13 @@ import navFaq from '../Assets/Images/nav-faq.svg';
 const Home = () => {
     return (
         <div className="main-page-container">
-            <TopLanding
-            />
-            <BottomLanding
-                marginTop={'4rem'}
-            />
+            <div className="main-page">
+                <TopLanding
+                />
+                <BottomLanding
+                    marginTop={'4rem'}
+                />
+            </div>
             <HomeNav
                 imageOne={navHome}
                 imageTwo={navGlossario}
