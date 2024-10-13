@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     border: none;
-    height: 88rem;
+    height: 115rem;
     width: 100vw;
     max-width: 100%;
     display: flex;
@@ -176,12 +176,6 @@
     text-align: left;
 }
 
-.carousel {
-    width: 100%;
-    height: 18rem;
-    background-color: red;
-}
-
 .text-container {
     display: flex;
     flex-direction: row;
@@ -197,6 +191,31 @@
 #carousel-text p {
     margin-right: 0.5rem;
     font-size: 0.9rem;
-    color: orange;
+    color: #E28E00;
     cursor: pointer;
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.carousel-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+#carousel-text {
+    color: #EEEEEE;
+    font-size: 2rem;
+}
+
+.lab-ca {
+    color: #EEEEEE;
 }

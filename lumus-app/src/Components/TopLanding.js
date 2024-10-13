@@ -35,7 +35,7 @@ const TopLanding = () => {
                     buttonWidth="9rem" 
                     buttonHeight="3rem" 
                     buttonBorderRadius="2rem" 
-                    backgroundColor="orange" 
+                    backgroundColor="#FEB800" 
                     buttonBorder="none"
                   />
                 </div>
@@ -45,7 +45,7 @@ const TopLanding = () => {
         <div className='board-box'>
           <div id='top-boards'>
             <Board
-              backgroundColor="orange"
+              backgroundColor="#FEB800"
               width="11rem"
               height="11.5rem"
               borderRadius="1.4rem"
@@ -63,12 +63,12 @@ const TopLanding = () => {
               width="11rem"
               height="11.5rem"
               borderRadius="1.4rem"
-              border="3px solid orange"
+              border="3px solid #FEB800"
               text="Glossário"
               fontSize="1.5rem"
               padding="1.3rem"
-              imgBorder="1px solid orange"
-              imgColor="orange"
+              imgBorder="1px solid #FEB800"
+              imgColor="#FEB800"
               image={glossario}
             />
           </div>
@@ -79,12 +79,12 @@ const TopLanding = () => {
               width="100%"
               height="11.5rem"
               borderRadius="1.4rem"
-              border="3px solid orange"
+              border="3px solid #FEB800"
               text="FAQ"
               fontSize="1.5rem"
               padding="1.3rem"
-              imgBorder="1px solid orange"
-              imgColor="orange"
+              imgBorder="1px solid #FEB800"
+              imgColor="#FEB800"
               image={faq}
             />
           </div>

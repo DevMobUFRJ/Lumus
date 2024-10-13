@@ -5,6 +5,8 @@ import instagram from '../Assets/Images/instagram-logo.svg';
 import youtube from '../Assets/Images/youtube-logo.svg';
 import tiktok from '../Assets/Images/tiktok-logo.svg';
 import green from '../Assets/Images/green-logo.svg';
+import lampCarousel from '../Assets/Images/frame41.png';
+import Carousel from './Carousel';
 
 const BottomLanding = ({
     marginTop
@@ -16,7 +18,19 @@ const BottomLanding = ({
         que disponibilizamos em nossas redes sociais</p>
 
         <div className='carousel'>
-
+          <Carousel
+            width={22}
+            height={22}
+            padding={2}
+            image={lampCarousel}
+            borderRadius="2rem"
+            border="none"
+            text="Você sabe escolher uma lâmpada?"
+            buttonText="Assistir vídeo"
+            buttonWidth="10rem"
+            buttonHeight="3.2rem"
+            buttonBorderRadius="2rem"
+          />
         </div>
 
         <div className='text-container' id='carousel-text'>
