@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import CardComponent from './Components/CardComponent';
 import { motion } from 'framer-motion';
 import img1 from './Assets/Images/6082664-removebg-preview 1.png';
 import img2 from './Assets/Images/removal 4.png';
 import img3 from './Assets/Images/JEMA_GER_1639-09-removebg-preview 1.png';
+import bg from './Assets/Images/Onboarding 1.png';
 import '../src/App.css';
 
 const cardData = [
@@ -42,15 +43,7 @@ const Home = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      style={{
-        display: 'flex',
-        height: '100vh',
-        justifyContent: 'center',
-        alignItems: 'center',
-        position: 'relative',
-        width: '100%',
-        padding: '0 10px',
-      }}
+      className='background'
     >
       {cardData.map((card, index) => (
         <CardComponent
@@ -63,7 +56,7 @@ const Home = () => {
           isActive={index === currentIndex}
         />
       ))}
-      <div style={{ position: 'absolute', bottom: '20px', right: '20px' }}>
+      <div style={{ position: 'absolute', bottom: '12vw', right: '5vw' }}>
         <motion.button
           onClick={handleNext}
           whileHover={{ scale: 1.1 }}
