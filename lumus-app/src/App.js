@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import img1 from './Assets/Images/6082664-removebg-preview 1.png';
 import img2 from './Assets/Images/removal 4.png';
 import img3 from './Assets/Images/JEMA_GER_1639-09-removebg-preview 1.png';
+import arrow from './Assets/Images/Vector.svg';
 import bg from './Assets/Images/Onboarding 1.png';
 import '../src/App.css';
 
@@ -73,7 +74,7 @@ const Home = () => {
             cursor: 'pointer',
           }}
         >
-          →
+          <img src={arrow}/>
         </motion.button>
       </div>
     </motion.div>
