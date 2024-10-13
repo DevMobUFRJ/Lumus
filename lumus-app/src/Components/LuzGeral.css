@@ -1,18 +1,6 @@
-* {
-    padding: 0;
-    margin: 0;
-    border: none;
-    box-sizing: border-box;
-}
-
-html, body {
-    width: 100%;
-    overflow-x: hidden;
-}
-
 .luz-geral {
-    width: 100vw;
-    padding: 2rem;
+    width: 90vw;
+    padding: 5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,6 +47,6 @@ html, body {
 
 .lg-text {
     margin-bottom: 1.8rem;
-    font-size: 0.925rem;
+    font-size: 0.99rem;
     color: #756559;
 }
