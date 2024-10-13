@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.luz-geral {
+    width: 100vw;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lg-title-container {
+    width: 100%;
+    height: 4rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lg-title {
+    width: 70%;
+}
+
+.lg-title-text {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.lg-button {
+    border: 1px solid #DBD7CE;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lg-button p {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.lg-text-container {
+    margin-top: 1rem;
+}
+
+.lg-text {
+    margin-bottom: 1.8rem;
+    font-size: 0.925rem;
+    color: #756559;
+}

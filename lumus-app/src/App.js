@@ -9,6 +9,7 @@ import img3 from './Assets/Images/JEMA_GER_1639-09-removebg-preview 1.png';
 import imgtest from './Assets/Images/Union.png';
 import '../src/App.css';
 import HomePage from './Components/Home';
+import LuzGeral from './Components/LuzGeral';
 
 const cardData = [
   {
@@ -40,7 +41,7 @@ const Home = () => {
   };
 
   return (
-    <HomePage
+    <LuzGeral
     />
   )
 };
