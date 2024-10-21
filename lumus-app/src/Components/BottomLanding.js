@@ -17,23 +17,10 @@ const BottomLanding = ({
        <p id='bottom-landing-text'>Veja alguns dos videos e jogos educativos 
         que disponibilizamos em nossas redes sociais</p>
 
-        <div className='carousel'>
-          <Carousel
-            width={22}
-            height={22}
-            padding={2}
-            image={lampCarousel}
-            borderRadius="2rem"
-            border="none"
-            text="Você sabe escolher uma lâmpada?"
-            buttonText="Assistir vídeo"
-            buttonWidth="10rem"
-            buttonHeight="3.2rem"
-            buttonBorderRadius="2rem"
-          />
-        </div>
+        <Carousel
+        />
 
-        <div className='text-container' id='carousel-text'>
+        <div className='text-container' id='carousel-link'>
           <p style={{textDecoration: 'underline'}}>Ver todos</p>
           <p>→</p>
         </div>
