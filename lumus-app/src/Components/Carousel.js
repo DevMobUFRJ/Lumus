@@ -67,8 +67,8 @@ const Carousel = (() => {
     return (
         <motion.div ref={carouselDiv} className='carousel' whileTap={{ cursor: "grabbing" }}>
             <motion.div className='carousel-inner' drag="x" dragConstraints={{ right: 0, left: -width }}>
-                {array.map(object => (
-                    <motion.div className='carousel-item' key={object}>
+                {array.map((object, i) => (
+                    <motion.div className='carousel-item' key={i}>
                         {object}
                     </motion.div>
                 ))}

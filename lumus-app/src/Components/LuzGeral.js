@@ -1,7 +1,13 @@
 import React from "react";
 import './LuzGeral.css';
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+    const navigate = useNavigate();
+    const handleClose = () => {
+        navigate('/home');
+    };
+
     return (
         <div className="luz-geral">
             <div className="lg-title-container">
@@ -11,7 +17,9 @@ const Home = () => {
                     </p>
                 </div>
 
-                <div className="lg-button">
+                <div
+                    onClick={handleClose} 
+                    className="lg-button">
                     <p>✕</p>
                 </div>
             </div>

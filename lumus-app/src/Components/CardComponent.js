@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const CardComponent = ({ image, title, description, color, onClick, isActive }) => {
   return (
     <motion.div
-      className="card"
+      className="card-component"
       onClick={onClick}
       initial={{ width: isActive ? '60vw' : '0.1vw', height: isActive ? '70vh' : '70vh', borderRadius: isActive ? '40px' : '40px' }}
       animate={{ width: isActive ? '60vw' : '0.1vw', height: isActive ? '70vh' : '70vh', borderRadius: isActive ? '40px' : '40px' }}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import CardComponent from './Components/CardComponent';
 import StaticButton from './Components/Buttons';
 import { motion } from 'framer-motion';
@@ -36,10 +36,15 @@ const cardData = [
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const navigate = useNavigate();
 
   const handleNext = () => {
-    const nextIndex = currentIndex === cardData.length - 1 ? 0 : currentIndex + 1;
-    setCurrentIndex(nextIndex);
+    if(currentIndex == 2){
+      navigate('/luz-geral');
+    } else {
+      const nextIndex = currentIndex === cardData.length - 1 ? 0 : currentIndex + 1;
+      setCurrentIndex(nextIndex);
+    }
   };
 
   return (
@@ -90,6 +95,8 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/luz-geral" element={<LuzGeral />} />
+        <Route path="/home" element={<HomePage />} />
       </Routes>
     </Router>
   );
