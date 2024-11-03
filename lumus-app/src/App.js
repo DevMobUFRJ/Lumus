@@ -41,9 +41,46 @@ const Home = () => {
   };
 
   return (
-    <HomePage
-    />
-  )
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      className='backgroundCards'
+    >
+      {cardData.map((card, index) => (
+        <CardComponent
+          key={index}
+          image={card.image}
+          title={card.title}
+          description={card.description}
+          color={card.color}
+          onClick={handleNext}
+          isActive={index === currentIndex}
+        />
+      ))}
+      <div style={{ position: 'absolute', bottom: '12vw', right: '5vw' }}>
+        <motion.button
+          onClick={handleNext}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          style={{
+            backgroundColor: '#fff',
+            border: 'none',
+            borderRadius: '50%',
+            width: '40px',
+            height: '40px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            cursor: 'pointer',
+          }}
+        >
+          <img src={arrow}/>
+        </motion.button>
+      </div>
+    </motion.div>
+  );
 };
 
 const App = () => {
