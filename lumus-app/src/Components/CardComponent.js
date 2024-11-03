@@ -8,8 +8,8 @@ const CardComponent = ({ image, title, description, color, onClick, isActive }) 
     <motion.div
       className="card"
       onClick={onClick}
-      initial={{ width: isActive ? '20%' : '1%', height: isActive ? '80%' : '80%', borderRadius: isActive ? '25px' : '25px' }}
-      animate={{ width: isActive ? '20%' : '1%', height: isActive ? '80%' : '80%', borderRadius: isActive ? '25px' : '25px' }}
+      initial={{ width: isActive ? '60vw' : '0.1vw', height: isActive ? '70vh' : '70vh', borderRadius: isActive ? '40px' : '40px' }}
+      animate={{ width: isActive ? '60vw' : '0.1vw', height: isActive ? '70vh' : '70vh', borderRadius: isActive ? '40px' : '40px' }}
       transition={{ duration: 0.5 }}
       style={{
         backgroundColor: color,
@@ -17,13 +17,12 @@ const CardComponent = ({ image, title, description, color, onClick, isActive }) 
         flexDirection: 'column',
         justifyContent: 'space-around',
         alignItems: 'center',
-        padding: '20px',
-        margin: '0 5px',
+        padding: '18px',
+        margin: '0 5px 15vh',
         cursor: 'pointer',
         position: 'relative',
         overflow: 'hidden',
         boxShadow: isActive ? '0px 4px 10px rgba(0, 0, 0, 0.2)' : 'none',
-        textAlign: 'left',
       }}
     >
       {isActive && (
@@ -32,8 +31,8 @@ const CardComponent = ({ image, title, description, color, onClick, isActive }) 
           <div
             style={{margin: '-150px 0 -40px 0'}}>
             <img src={logo} alt='Lumos' style={{margin: '0 0 -20px 0'}}/>
-            <h2 style={{ color: '#fff', textAlign: 'left', fontSize: '2rem', fontWeight: '400' }}>{title}</h2>
-            <p style={{ color: '#fff', textAlign: 'left', fontSize: '1rem', fontWeight: '300', margin: '-20px 0 0 0' }}>{description}</p>
+            <h2 style={{ color: '#fff', textAlign: 'left', fontSize: '2rem', fontWeight: '400', width: '90%' }}>{title}</h2>
+            <p style={{ color: '#fff', textAlign: 'left', fontSize: '1rem', fontWeight: '300', margin: '-20px 0 0 0', textIndent: 'center' }}>{description}</p>
           </div>
         </>
       )}

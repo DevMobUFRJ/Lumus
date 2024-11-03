@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import CardComponent from './Components/CardComponent';
 import StaticButton from './Components/Buttons';
 import { motion } from 'framer-motion';
@@ -7,6 +7,8 @@ import img1 from './Assets/Images/6082664-removebg-preview 1.png';
 import img2 from './Assets/Images/removal 4.png';
 import img3 from './Assets/Images/JEMA_GER_1639-09-removebg-preview 1.png';
 import imgtest from './Assets/Images/Union.png';
+import arrow from './Assets/Images/Vector.svg';
+import bg from './Assets/Images/Onboarding 1.png';
 import '../src/App.css';
 import HomePage from './Components/Home';
 import LuzGeral from './Components/LuzGeral';
@@ -41,9 +43,46 @@ const Home = () => {
   };
 
   return (
-    <HomePage
-    />
-  )
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      className='background'
+    >
+      {cardData.map((card, index) => (
+        <CardComponent
+          key={index}
+          image={card.image}
+          title={card.title}
+          description={card.description}
+          color={card.color}
+          onClick={handleNext}
+          isActive={index === currentIndex}
+        />
+      ))}
+      <div style={{ position: 'absolute', bottom: '12vw', right: '5vw' }}>
+        <motion.button
+          onClick={handleNext}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          style={{
+            backgroundColor: '#fff',
+            border: 'none',
+            borderRadius: '50%',
+            width: '40px',
+            height: '40px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            cursor: 'pointer',
+          }}
+        >
+          <img src={arrow}/>
+        </motion.button>
+      </div>
+    </motion.div>
+  );
 };
 
 const App = () => {
