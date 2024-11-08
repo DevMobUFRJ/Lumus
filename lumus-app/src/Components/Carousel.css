@@ -1,0 +1,14 @@
+.carousel {
+    cursor: grab;
+    overflow: hidden;
+    width: 120%;
+    max-width: 100%;
+}
+
+.carousel-inner {
+    display: flex;
+}
+
+.carousel-item {
+    margin-right: 0.9rem;
+}
