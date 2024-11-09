@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 
 const HomeNav = ({
@@ -35,11 +36,13 @@ const HomeNav = ({
                 />
             </div>
             <div className="home-nav-button" id="home-nav-button-faq">
-                <img 
-                    src={imageFour} 
-                    alt={altFour ? altFour : 'FAQ'}  
-                    className="nav-image"
-                />
+                <Link to="/Faq">
+                    <img 
+                        src={imageFour} 
+                        alt={altFour ? altFour : 'FAQ'}  
+                        className="nav-image"
+                    />
+                </Link>
             </div>
         </div>
     );

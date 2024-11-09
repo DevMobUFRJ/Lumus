@@ -26,6 +26,8 @@ body {
   .faq-header .back-button {
     width: 32px; /* Tamanho da seta */
     cursor: pointer;
+    caret-color: transparent;
+
   }
 
   .faq-header-title {

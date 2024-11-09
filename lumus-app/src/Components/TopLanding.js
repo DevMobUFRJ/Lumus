@@ -1,6 +1,7 @@
 import React from 'react';
 import StaticButton from './Buttons';
 import Board from './Board';
+import { Link } from 'react-router-dom';
 import mainPageHeader from '../Assets/Images/mainPageHeader.svg';
 import lampVector from '../Assets/Images/LampVector.png';
 import lightMatch from '../Assets/Images/nav-lightmatch.svg';
@@ -74,19 +75,21 @@ const TopLanding = () => {
           </div>
 
           <div id='bottom-board'>
-            <Board
-              backgroundColor="white"
-              width="100%"
-              height="11.5rem"
-              borderRadius="1.4rem"
-              border="3px solid #FEB800"
-              text="FAQ"
-              fontSize="1.5rem"
-              padding="1.3rem"
-              imgBorder="1px solid #FEB800"
-              imgColor="#FEB800"
-              image={faq}
-            />
+            <Link to="/faq" style={{ textDecoration: 'none', width:'100%', color: 'inherit' }}>
+              <Board
+                backgroundColor="white"
+                width="100%"
+                height="11.5rem"
+                borderRadius="1.4rem"
+                border="3px solid #FEB800"
+                text="FAQ"
+                fontSize="1.5rem"
+                padding="1.3rem"
+                imgBorder="1px solid #FEB800"
+                imgColor="#FEB800"
+                image={faq}
+              />
+            </Link>
           </div>
         </div>
     </div>
