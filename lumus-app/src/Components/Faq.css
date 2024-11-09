@@ -6,10 +6,9 @@ body {
 
 /* Container principal */
 .faq-container {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 90%;
+    margin: 2%;
+    padding: 1%;
     font-family: "Inter", sans-serif;
     background-color: #f9f9f9;
   }
@@ -91,6 +90,8 @@ body {
   /* Quando a resposta está expandida */
   .content.expanded {
     max-height: 100%;
+    font-size: 16px;
+    color: #756559;
   }
 
   
@@ -99,7 +100,7 @@ body {
   }
   
   .faq-item-title {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     color: #333;
     display: flex;
