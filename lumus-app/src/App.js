@@ -85,9 +85,6 @@ const Home = () => {
           →
         </motion.button>
       </div>
-      <div style={{ position: 'absolute', top: '20px', right: '20px' }}>
-        <Link to="/Faq">Go to FAQ</Link>
-      </div>
     </motion.div>
   );
 };
