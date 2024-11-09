@@ -2,6 +2,7 @@
 
 .card-component {
     font-family: 'Inter', sans-serif;
+    caret-color: transparent;
   }
   
   .card-component img {

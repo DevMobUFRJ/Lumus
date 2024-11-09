@@ -8,6 +8,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    caret-color: transparent;
+
 }
 
 .main-page {
