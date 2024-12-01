@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/lumos/static/css/main.bf4fd36c.css",
+    "main.js": "/lumos/static/js/main.75511801.js",
+    "static/js/453.41d30148.chunk.js": "/lumos/static/js/453.41d30148.chunk.js",
+    "static/media/Frame470.svg": "/lumos/static/media/Frame470.1100ead71ee5322b8d56dc9201fbdf25.svg",
+    "static/media/frame47.png": "/lumos/static/media/frame47.fff26cd2c2f416fe2625.png",
+    "static/media/frame45.png": "/lumos/static/media/frame45.fdbd4f12afc2ffa7fb26.png",
+    "static/media/frame43.png": "/lumos/static/media/frame43.ccd480eb5a9254e43f44.png",
+    "static/media/frame44.png": "/lumos/static/media/frame44.286df33d7ba56498e0b1.png",
+    "static/media/frame41.png": "/lumos/static/media/frame41.9846267ec4dc6fe741f5.png",
+    "static/media/6082664-removebg-preview 1.png": "/lumos/static/media/6082664-removebg-preview 1.53548ac613e01c9fdd55.png",
+    "static/media/removal 4.png": "/lumos/static/media/removal 4.adbc74426389bb4a81d1.png",
+    "service-worker.js": "/lumos/service-worker.js",
+    "static/media/JEMA_GER_1639-09-removebg-preview 1.png": "/lumos/static/media/JEMA_GER_1639-09-removebg-preview 1.ad8c376eb6ed6ea2ac67.png",
+    "static/media/Onboarding 1.png": "/lumos/static/media/Onboarding 1.336dc76f901259e18369.png",
+    "static/media/mainPageHeader.svg": "/lumos/static/media/mainPageHeader.cb5fb1602d65db82780f594e7bbddbe0.svg",
+    "static/media/instagram-logo.svg": "/lumos/static/media/instagram-logo.780dbfd2843f2dd17fd2855ab3057c0c.svg",
+    "static/media/tiktok-logo.svg": "/lumos/static/media/tiktok-logo.3c8f59e4b174d1ad8d88b56175168b1d.svg",
+    "static/media/nav-faq.svg": "/lumos/static/media/nav-faq.f98d85a7d37c33f022a1a5331b747806.svg",
+    "static/media/nav-lightmatch.svg": "/lumos/static/media/nav-lightmatch.a5cf2a44d6a8d116d5106e53fd2af121.svg",
+    "static/media/nav-glossario.svg": "/lumos/static/media/nav-glossario.bc88d6a1a4f0aadd5fd2400fd39d394b.svg",
+    "static/media/nav-home.svg": "/lumos/static/media/nav-home.f764c252c3bdac95febe06605518bdd7.svg",
+    "static/media/youtube-logo.svg": "/lumos/static/media/youtube-logo.2e833df9cf3a75a138482e737d8e4047.svg",
+    "static/media/Vector.svg": "/lumos/static/media/Vector.5dd6bb3b48137687ddb2910c5422de5e.svg",
+    "index.html": "/lumos/index.html",
+    "static/media/green-logo.svg": "/lumos/static/media/green-logo.c52dce8a43bb897ee8dce423e07434e8.svg",
+    "main.bf4fd36c.css.map": "/lumos/static/css/main.bf4fd36c.css.map",
+    "main.75511801.js.map": "/lumos/static/js/main.75511801.js.map",
+    "453.41d30148.chunk.js.map": "/lumos/static/js/453.41d30148.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf4fd36c.css",
+    "static/js/main.75511801.js"
+  ]
+}
