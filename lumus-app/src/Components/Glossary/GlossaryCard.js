@@ -8,7 +8,7 @@ const GlossaryCard = ({width, height, padding, borderRadius, border, upperText, 
         style={{width: width, maxHeight: height, borderRadius: borderRadius, border: border, padding: padding}}
       >
         <div className='glossary-card'>
-            <div className='text-container'>
+            <div className='glossary-card-text-container'>
                 <p>{upperText}</p>
                 <p>{bottomText}</p>
             </div>
