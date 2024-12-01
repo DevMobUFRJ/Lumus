@@ -11,7 +11,8 @@ const StaticButton = ({
   backgroundColor, 
   border,
   buttonBorder,
-  containerId
+  containerId,
+  marginLeft
 }) => {
   return (
     <div 
@@ -20,7 +21,8 @@ const StaticButton = ({
       style={{ 
         width: buttonWidth, 
         height: buttonHeight, 
-        border: border ? border : 'none'
+        border: border ? border : 'none',
+        marginLeft: marginLeft ? marginLeft : '0rem'
       }}
       >
       <div 
@@ -41,7 +43,7 @@ const StaticButton = ({
             style={{ width: '50%', marginBottom: '10px' }} 
           />
         ) : (
-          <div style={{ color: 'black' }}>
+          <div className="static_button_text" style={{ color: 'black' }}>
             {text}
           </div>
         )}

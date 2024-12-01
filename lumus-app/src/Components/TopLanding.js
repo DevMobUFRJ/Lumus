@@ -28,7 +28,7 @@ const TopLanding = () => {
             width: '100%',
         }}>
             <div className='card'>
-                <p className='card-text'>Conheça o projeto <b>Atitudes Sustentáveis!</b></p>
+                <p className='card-text'>Conheça o projeto <b id="card-text_top_landing">Atitudes Sustentáveis!</b></p>
                 <div className='button-container'
                 style={{marginTop: '-0.6rem'}}>
                   <StaticButton 

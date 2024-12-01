@@ -30,9 +30,9 @@ const CardComponent = ({ image, title, description, color, onClick, isActive }) 
           <img src={image} alt={title} style={{ width: '100%', marginBottom: '10px' }} />
           <div
             style={{margin: '-150px 0 -40px 0'}}>
-            <img src={logo} alt='Lumos' style={{margin: '0 0 -20px 0'}}/>
+            <img src={logo} alt='Lumos' style={{margin: '0 0 10px 0'}}/>
             <h2 style={{ color: '#fff', textAlign: 'left', fontSize: '2rem', fontWeight: '400', width: '90%' }}>{title}</h2>
-            <p style={{ color: '#fff', textAlign: 'justify', fontSize: '1rem', fontWeight: '300', margin: '-20px 0 0 0', width: '98%' }}>{description}</p>
+            <p style={{ color: '#fff', textAlign: 'justify', fontSize: '1rem', fontWeight: '300', margin: '10px 0 0 0', width: '98%' }}>{description}</p>
           </div>
         </>
       )}
