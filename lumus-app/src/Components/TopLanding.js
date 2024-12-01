@@ -45,6 +45,7 @@ const TopLanding = () => {
 
         <div className='board-box'>
           <div id='top-boards'>
+          <Link to="/Sala" style={{ textDecoration: 'none', width:'100%', color: 'inherit', marginRight: '1rem' }}>
             <Board
               backgroundColor="#FEB800"
               width="11rem"
@@ -58,7 +59,9 @@ const TopLanding = () => {
               imgBorder="1px solid black"
               image={lightMatch}
             />
+          </Link>  
 
+          <Link to="/home" style={{ textDecoration: 'none', width:'100%', color: 'inherit' }}>
             <Board
               backgroundColor="white"
               width="11rem"
@@ -72,6 +75,7 @@ const TopLanding = () => {
               imgColor="#FEB800"
               image={glossario}
             />
+          </Link>
           </div>
 
           <div id='bottom-board'>

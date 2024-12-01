@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
-import CardComponent from './Components/CardComponent';
+import CardComponent from './Components/CardComponent/CardComponent';
 import StaticButton from './Components/Buttons';
 import { motion, AnimatePresence } from 'framer-motion';
 import img1 from './Assets/Images/6082664-removebg-preview 1.png';
@@ -13,6 +13,9 @@ import '../src/App.css';
 import HomePage from './Components/Home';
 import LuzGeral from './Components/LuzGeral';
 import Faq from './Components/Faq';
+import Kitchen from './pages/lightMatchKitchen/Kitchen';
+import Room from './pages/lightMatchRoom/Room';
+import Bedroom from './pages/lightMatchBedroom/Bedroom';
 
 const cardData = [
   {
@@ -99,6 +102,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Faq" element={<Faq />} />
+        <Route path="/Sala" element={<Room/>} />
+        <Route path="/cozinha" element={<Kitchen/>} />
+        <Route path="/quarto" element={<Bedroom/>} />
         <Route path="/luz-geral" element={<AnimatePresence mode='wait'>
               <motion.div
                 initial={{ opacity: 0, x: 100 }}

@@ -1,0 +1,48 @@
+#navBar {
+
+  margin-top: 7%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+    position: sticky;
+    bottom: 3%;
+    width: 92vw;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-top: 1px solid #e2e8f0;
+    padding: 0.5rem;
+    border-radius: 99px;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(194,190,194,1);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(194,190,194,1);
+    box-shadow: 0px 0px 30px 0px rgba(194,190,194,1);
+  }
+
+  .nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 3.5%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .icon-active {
+    filter: invert(36%) sepia(27%) saturate(6652%) hue-rotate(26deg) brightness(98%) contrast(98%);
+  }
+
+  .nav-link {
+    display: block;
+    text-decoration: none;
+    width: fit-content;
+  }
+
+   
+  
+

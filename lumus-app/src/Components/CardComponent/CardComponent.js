@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../Assets/Images/Union.png'
+import logo from '../../Assets/Images/Union.png'
 import './CardComponent.css';
 import { motion } from 'framer-motion';
 

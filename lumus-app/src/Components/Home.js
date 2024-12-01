@@ -6,6 +6,7 @@ import navHome from '../Assets/Images/nav-home.svg';
 import navGlossario from '../Assets/Images/nav-glossario.svg';
 import navLightMatch from '../Assets/Images/nav-lightmatch.svg';
 import navFaq from '../Assets/Images/nav-faq.svg';
+import NavBar from "./NavBar/NavBar";
 import { AnimatePresence } from 'framer-motion';
 
 const Home = () => {
@@ -19,12 +20,7 @@ const Home = () => {
                         marginTop={'4rem'}
                     />
                 </div>
-                <HomeNav
-                    imageOne={navHome}
-                    imageTwo={navGlossario}
-                    imageThree={navLightMatch}
-                    imageFour={navFaq}
-                />
+                <NavBar colorFaq={false} colorGlossario={false} colorHome={true} colorLightMatch={false}/>
             </div>
         </AnimatePresence>
     );

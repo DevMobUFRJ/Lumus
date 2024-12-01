@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    font-family: "Inter", sans-serif;
+    
+}
+
+#divButtonResults{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    left: 24%;
+
+    width: 40%;
+    height: 3.7rem;
+
+    border-radius: 99px;
+    background-color: #FEB800;
+    
+    font-weight: 500;
+    text-align: center;
+    gap: 3%;
+
+    margin-top: 10px;
+}
+
+#TextButtonResults{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
