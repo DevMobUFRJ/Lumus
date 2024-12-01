@@ -9,8 +9,8 @@ const GlossaryCard = ({width, height, padding, borderRadius, border, upperText, 
       >
         <div className='glossary-card'>
             <div className='glossary-card-text-container'>
-                <p>{upperText}</p>
-                <p>{bottomText}</p>
+                <p id='glossary-card-upper-text'>{upperText}</p>
+                <p id='glossary-card-bottom-text'>{bottomText}</p>
             </div>
             <div className='glossary-dropdown-container'>
                 <div className='glossary-dropdown'>

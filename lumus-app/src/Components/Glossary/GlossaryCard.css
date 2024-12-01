@@ -15,7 +15,7 @@
     align-items: center;
 }
 
-.text-container {
+.glossary-card-text-container {
     display: flex;
     width: 85%;
     height: 100%;
@@ -69,4 +69,8 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+#glossary-card-bottom-text {
+    color: #E28E00;
 }
