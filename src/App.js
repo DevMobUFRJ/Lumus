@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import CardComponent from './Components/CardComponent/CardComponent';
 import StaticButton from './Components/Buttons';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -98,7 +98,7 @@ const Home = () => {
 
 const App = () => {
   return (
-    <Router basename='/'>
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Faq" element={<Faq />} />
