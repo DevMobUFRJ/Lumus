@@ -1,4 +1,4 @@
-/*const { override, addWebpackPlugin } = require('customize-cra');
+const { override, addWebpackPlugin } = require('customize-cra');
 const { InjectManifest } = require('workbox-webpack-plugin');
 
 module.exports = override(
@@ -8,4 +8,4 @@ module.exports = override(
       swDest: 'service-worker.js',
     })
   )
-);*/
+);
