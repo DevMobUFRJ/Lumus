@@ -1,10 +1,19 @@
 import React from 'react';
 import './Glossary.css';
 import GlossaryCard from './GlossaryCard';
+import { Link } from 'react-router-dom';
+
+import mainPageHeader from '../../Assets/Images/mainPageHeader.svg';
 
 const Glossary = () => {
     return (
       <div className='glossary-container'>
+        <div id='top-button-container'>
+          <Link to="/home">
+            <img src={mainPageHeader} />
+          </Link>
+        </div>
+
         <div className='glossary-page'>
             <div className='glossary-page-upper-text-container'>
                 <p className='glossary-page-upper-text'>

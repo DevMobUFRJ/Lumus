@@ -20,7 +20,7 @@ const NavBar = ({ colorHome, colorFaq, colorLightMatch, colorGlossario }) => {
         </button>
         
         <button className="nav-button" style={{ backgroundColor: colorGlossario ? '#F9E4B2' : 'white' }}>
-          <Link to="/home">
+          <Link to="/glossario">
             <img src={IconGlossario} alt="Glossário" style={{iconStyle}} className={`nav-icon ${colorGlossario ? 'icon-active' : ''}`}/>
           </Link>
         </button>

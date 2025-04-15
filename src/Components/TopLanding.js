@@ -61,7 +61,7 @@ const TopLanding = () => {
             />
           </Link>  
 
-          <Link to="/home" style={{ textDecoration: 'none', width:'100%', color: 'inherit' }}>
+          <Link to="/glossario" style={{ textDecoration: 'none', width:'100%', color: 'inherit' }}>
             <Board
               backgroundColor="white"
               width="11rem"
