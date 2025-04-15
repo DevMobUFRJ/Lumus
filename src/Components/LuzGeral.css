@@ -1,5 +1,5 @@
 .luz-geral {
-    width: 90vw;
+    width: 100vw;
     padding: 5vw;
     display: flex;
     flex-direction: column;
@@ -49,4 +49,5 @@
     margin-bottom: 1.8rem;
     font-size: 0.99rem;
     color: #756559;
+    text-align: justify;
 }

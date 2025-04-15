@@ -3,6 +3,7 @@ import arrowLeft from '../Assets/Images/ArrowLeft.png'
 import plus from '../Assets/Images/plus.png'
 import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
+import NavBar from "./NavBar/NavBar";
 import './Faq.css';
 
 const Faq = () => {
@@ -14,7 +15,7 @@ const Faq = () => {
   };
 
   const handleBackClick = () => {
-    navigate('/');  // Navega para a rota raiz "/"
+    navigate('/home');  // Navega para a rota raiz "/"
   };
 
 
@@ -108,6 +109,7 @@ const Faq = () => {
           </div>
         ))}
       </div>
+      <NavBar colorFaq={true} colorGlossario={false} colorHome={false} colorLightMatch={false}/>
     </div>
   );
 };
