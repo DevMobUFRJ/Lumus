@@ -2,20 +2,18 @@ import React from 'react';
 import StaticButton from './Buttons';
 import Board from './Board';
 import { Link } from 'react-router-dom';
-import mainPageHeader from '../Assets/Images/mainPageHeader.svg';
 import lampVector from '../Assets/Images/LampVector.png';
 import lightMatch from '../Assets/Images/nav-lightmatch.svg';
 import glossario from '../Assets/Images/nav-glossario.svg';
 import faq from '../Assets/Images/nav-faq.svg';
 import './Home.css';
 import Card from './Card';
+import MainPageHeader from './LogoLumos/MainPageHeader';
 
 const TopLanding = () => {
   return (
     <div className='top-landing-container'>
-        <div id='top-button-container'>
-          <img src={mainPageHeader} />
-        </div>
+        <MainPageHeader />
         
         <div className='card-container'
           style={{
