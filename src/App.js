@@ -16,6 +16,7 @@ import Faq from './Components/Faq';
 import Kitchen from './pages/lightMatchKitchen/Kitchen';
 import Room from './pages/lightMatchRoom/Room';
 import Bedroom from './pages/lightMatchBedroom/Bedroom';
+import Glossary from './Components/Glossary/Glossary';
 
 const cardData = [
   {
@@ -102,6 +103,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Faq" element={<Faq />} />
+        <Route path="/glossario" element={<Glossary />} />
         <Route path="/Sala" element={<Room/>} />
         <Route path="/cozinha" element={<Kitchen/>} />
         <Route path="/quarto" element={<Bedroom/>} />
