@@ -40,6 +40,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.glossary-dropdown.open {
+    transform: rotate(180deg);
 }
 
 .dropdown-content {
@@ -47,10 +52,21 @@
     flex-direction: row;
     width: 100%;
     margin-top: 1rem;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
 .dropdown-text-container {
     width: 80%;
+}
+
+.dropdown-text {
+    opacity: 0.2;
+    transition: 0.5s ease, opacity 0.5s ease;
+}
+
+.dropdown-text.open {
+    opacity: 1;
 }
 
 .dropdown-image-container {

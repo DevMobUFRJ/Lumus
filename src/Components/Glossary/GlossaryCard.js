@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import './GlossaryCard.css';
+import buttonImg from '../../Assets/Images/GlossaryDropdownButton.svg';
 
-const GlossaryCard = ({width, height, padding, borderRadius, border, upperText, bottomText, dropdownText, dropdownImg}) => {
+
+const GlossaryCard = ({width, height, padding, borderRadius, border, upperText, bottomText, dropdownHeight, dropdownText, dropdownImg}) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const contentRef = useRef(null);
+
+    const handleClick = () => {
+      setIsOpen(prev => !prev);
+    };
+
     return (
       
       <div className='glossary-card-container'
-        style={{width: width, maxHeight: height, borderRadius: borderRadius, border: border, padding: padding}}
+        style={{width: width, maxHeight: '12rem', borderRadius: borderRadius, border: border, padding: padding}}
+        ref={contentRef}
       >
         <div className='glossary-card'>
             <div className='glossary-card-text-container'>
@@ -13,16 +23,16 @@ const GlossaryCard = ({width, height, padding, borderRadius, border, upperText, 
                 <p id='glossary-card-bottom-text'>{bottomText}</p>
             </div>
             <div className='glossary-dropdown-container'>
-                <div className='glossary-dropdown'>
-                    V
+                <div className={`glossary-dropdown ${isOpen ? "open" : ""}`} onClick={handleClick}>
+                  <img src={buttonImg} alt='dropdown' />
                 </div>
             </div>
 
         </div>
 
-        <div className='dropdown-content'>
+        <div className='dropdown-content' style={{maxHeight: isOpen ? `${contentRef.current?.scrollHeight}px` : 0}}>
             <div className='dropdown-text-container'>
-                <p>{dropdownText}</p>
+                <p className={`dropdown-text ${isOpen ? "open" : ""}`}>{dropdownText}</p>
             </div>
 
             <div className='dropdown-image-container'>
