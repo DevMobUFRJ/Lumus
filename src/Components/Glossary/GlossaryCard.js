@@ -24,7 +24,7 @@ const GlossaryCard = ({width, height, padding, borderRadius, border, upperText, 
             </div>
             <div className='glossary-dropdown-container'>
                 <div className={`glossary-dropdown ${isOpen ? "open" : ""}`} onClick={handleClick}>
-                  <img src={buttonImg} alt='dropdown' />
+                  <img src={buttonImg} className= "glossary-dropdown-button" alt='dropdown' />
                 </div>
             </div>
 
@@ -32,7 +32,8 @@ const GlossaryCard = ({width, height, padding, borderRadius, border, upperText, 
 
         <div className='dropdown-content' style={{maxHeight: isOpen ? dropdownHeight : 0}}>
             <div className='dropdown-text-container'>
-                <p className={`dropdown-text ${isOpen ? "open" : ""}`}>{dropdownText}</p>
+                <p className={`dropdown-text ${isOpen ? "open" : ""}`}
+                    style={{opacity: 0.6}}>{dropdownText}</p>
             </div>
 
             <div className='dropdown-image-container'>

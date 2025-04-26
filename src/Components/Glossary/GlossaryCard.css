@@ -13,6 +13,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 0.4rem;
 }
 
 .glossary-card-text-container {
@@ -34,8 +35,8 @@
 
 .glossary-dropdown {
     border: 1px solid gray;
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 2.4rem;
+    height: 2.4rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -45,6 +46,10 @@
 
 .glossary-dropdown.open {
     transform: rotate(180deg);
+}
+
+.glossary-dropdown-button {
+    width: 1.5rem;
 }
 
 .dropdown-content {
@@ -70,7 +75,7 @@
 }
 
 .dropdown-image-container {
-    width: 20%;
+    width: 30%;
 }
 
 .glossary-page-cards {
@@ -87,6 +92,12 @@
     gap: 0.5rem;
 }
 
+#glossary-card-upper-text {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
 #glossary-card-bottom-text {
     color: #E28E00;
+    margin-top: 0.5rem;
 }

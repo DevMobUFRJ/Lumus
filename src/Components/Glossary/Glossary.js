@@ -92,9 +92,11 @@ const Glossary = () => {
             <div className='glossary-page-bottom-text-container'>
                 <p className='glossary-page-bottom-text'>
                     Essas são as propriedades lumínicas que você precisa considerar ao adquirir uma equipamento de iluminação. Elas interagem com as superfícies iluminadas e promovem o estímulo lumínico que é captado pelo seu olho e interpretado pelo seu cérebro para gerar sensações. Se a luz percebida por você gera sensação de bem estar, essa luz oferece conforto lumínico, isto é, saúde tanto física(saúde da visão) quanto psicológica. 
-
+                </p>
+                <p className='glossary-page-bottom-text'>
                     Sempre selecione equipamentos que são fonte de luz considerando suas unidades fotométricas que medem essas propriedades que listamos aqui e escolha dentro dessa seleção o que apresentar maior rendimento luminoso, isto é maior eficiência energética. No entanto nunca consuma um equipamento só pela eficiência energética. Antes de tudo a iluminação precisa ser eficiente, isto é a luz tem que estar adequada! 
-
+                </p>
+                <p className='glossary-page-bottom-text'>
                     Lumos vai ajudar você a encontrar a luz geral mais adequada para seu ambiente!
                 </p>
             </div>
