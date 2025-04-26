@@ -6,7 +6,7 @@ import './Bedroom.css';
 import ResultsButton from '../../Components/ResultsButton/ResultsButton';
 import InputOption from '../../Components/InputOption/InputOption';
 import InputSize from '../../Components/InputSize/InputSize';
-import LogoLumos from '../../Components/LogoLumos/LogoLumos';
+import MainPageHeader from '../../Components/LogoLumos/MainPageHeader'
 import NavBar from '../../Components/NavBar/NavBar'
 
 
@@ -49,8 +49,8 @@ const Bedroom = () => {
 
   return (
     <div id='divLightMatch'>
-
-        <LogoLumos/>
+        <MainPageHeader />
+        
         <div id='divButtonRoom'>
             <ButtonRoom colorRoom={false} colorKitchen={false} corBedroom={true}/>
         </div>
