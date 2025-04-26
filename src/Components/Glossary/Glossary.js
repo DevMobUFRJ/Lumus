@@ -2,6 +2,7 @@ import React from 'react';
 import './Glossary.css';
 import GlossaryCard from './GlossaryCard';
 import MainPageHeader from '../LogoLumos/MainPageHeader';
+import NavBar from '../NavBar/NavBar';
 import dropdown1 from '../../Assets/Images/glossary-dropdown-1.svg';
 import dropdown2 from '../../Assets/Images/glossary-dropdown-2.svg';
 import dropdown3 from '../../Assets/Images/glossary-dropdown-3.svg';
@@ -101,6 +102,7 @@ const Glossary = () => {
                 </p>
             </div>
         </div>
+        <NavBar colorFaq={false} colorGlossario={true} colorHome={false} colorLightMatch={false}/>
       </div>
     );
   };
