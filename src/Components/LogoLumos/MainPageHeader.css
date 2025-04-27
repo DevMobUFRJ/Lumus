@@ -1,0 +1,8 @@
+#container-main-page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0.85rem;
+    width: 100%;
+}

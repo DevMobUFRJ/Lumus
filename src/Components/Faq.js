@@ -103,7 +103,7 @@ const Faq = () => {
             </div>
               <div className={`content ${expandedIndex === index ? 'expanded' : ''}`}>
                 {item.answer.split('\n').map((line, lineIndex) => (
-                  <p dangerouslySetInnerHTML={{__html: line.trim()}} key={lineIndex}></p> // Renderiza cada linha em um parágrafo
+                  <p dangerouslySetInnerHTML={{__html: line.trim()}} key={lineIndex}></p>
                 ))}
               </div>
           </div>

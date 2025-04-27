@@ -1,0 +1,27 @@
+.glossary-container {
+    margin: 0;
+    margin-bottom: 2rem;
+    padding: 0;
+    border: none;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.glossary-page {
+    margin-top: 1.4rem;
+    width: 87%;
+}
+.glossary-page-bottom-text {
+    margin-top: 1.4rem;
+}
+
+.glossary-page-upper-text {
+    margin-bottom: 1.5rem;
+}
+
+.glossary-page-bottom-text, .glossary-page-upper-text {
+    font-size: 1rem;
+}
