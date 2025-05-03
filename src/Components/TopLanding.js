@@ -7,15 +7,10 @@ import lightMatch from '../Assets/Images/nav-lightmatch.svg';
 import glossario from '../Assets/Images/nav-glossario.svg';
 import faq from '../Assets/Images/nav-faq.svg';
 import './Home.css';
-import MainPageHeader from './LogoLumos/MainPageHeader';
 
 const TopLanding = () => {
   return (
     <div className='top-landing-container'>
-        <div id='top-landing-header-container'>
-          <MainPageHeader />
-        </div>
-
         <div className='card-container'
           style={{
             backgroundImage: `url(${lampVector})`,
