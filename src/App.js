@@ -17,6 +17,7 @@ import Kitchen from './pages/lightMatchKitchen/Kitchen';
 import Room from './pages/lightMatchRoom/Room';
 import Bedroom from './pages/lightMatchBedroom/Bedroom';
 import Glossary from './Components/Glossary/Glossary';
+import Result from './pages/lightMatchResult/Result';
 
 const cardData = [
   {
@@ -125,6 +126,16 @@ const App = () => {
             transition={{ duration: 0.5 }}
           >
             <HomePage />
+          </motion.div>
+        </AnimatePresence>} />
+        <Route path="/Result" element={<AnimatePresence mode='wait'>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -100 }}
+            transition={{ duration: 0.5 }}
+          >
+            <Result />
           </motion.div>
         </AnimatePresence>} />
       </Routes>
