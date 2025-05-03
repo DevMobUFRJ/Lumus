@@ -5,4 +5,5 @@
     align-items: flex-start;
     padding: 0.85rem;
     width: 100%;
+    max-width: 100%;
 }

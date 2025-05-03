@@ -12,8 +12,10 @@ import MainPageHeader from './LogoLumos/MainPageHeader';
 const TopLanding = () => {
   return (
     <div className='top-landing-container'>
-        <MainPageHeader />
-        
+        <div id='top-landing-header-container'>
+          <MainPageHeader />
+        </div>
+
         <div className='card-container'
           style={{
             backgroundImage: `url(${lampVector})`,
