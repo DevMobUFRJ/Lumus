@@ -1,6 +1,7 @@
 {
   "short_name": "Lumos",
   "name": "Lumos App",
+  "description": "Ilumine sua casa corretamente.",
 
   "icons": [
     {
@@ -9,12 +10,37 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "./icons/iconeLumus_48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "./icons/iconeLumus_72x72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "./icons/iconeLumus_96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "./icons/iconeLumus_128x128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "./icons/iconeLumus_192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "./icons/iconeLumus_384x384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "./icons/iconeLumus_512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
@@ -24,6 +50,7 @@
   "start_url": "./",
 
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "display_override": ["standalone", "minimal-ui"],
+  "theme_color": "#FEB800",
+  "background_color": "#FEB800"
 }
