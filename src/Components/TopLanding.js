@@ -27,8 +27,9 @@ const TopLanding = () => {
                 style={{marginTop: '-0.6rem'}}>
                   <StaticButton 
                     text="Saiba mais →" 
-                    buttonWidth="40%" 
-                    buttonHeight="100%" 
+                    fontSize="4vw"
+                    buttonWidth="45%" 
+                    buttonHeight="90%" 
                     buttonBorderRadius="2rem" 
                     backgroundColor="#FEB800" 
                     buttonBorder="none"

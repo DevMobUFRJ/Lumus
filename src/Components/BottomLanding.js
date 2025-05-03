@@ -21,8 +21,8 @@ const BottomLanding = ({
         />
 
         <div className='text-container' id='carousel-link'>
-          <p style={{textDecoration: 'underline'}}>Ver todos</p>
-          <p>→</p>
+          <p style={{textDecoration: 'underline', fontSize: '3.8vw'}}>Ver todos</p>
+          <p style={{fontSize: '3.8vw'}}>→</p>
         </div>
 
         <div className='card-container'
@@ -36,27 +36,27 @@ const BottomLanding = ({
             width: '100%',
         }}>
             <div className='card'>
-                <p className='card-text' style={{fontSize: '1.5rem'}}>Acompanhe nossas redes sociais!</p>
+                <p className='card-text' style={{fontSize: '5.7vw'}}>Acompanhe nossas redes sociais!</p>
                 <div id='lamp-card-buttons-container'>
-                    <div className='cardButtonImageContainer'>
+                    <div className='card-button-image-container'>
                       <Link to="https://www.instagram.com/labca.ufrj/" target="_blank" rel="noopener noreferrer">
                         <img src={instagram} alt='Instagram'></img>
                       </Link>
                     </div>
                 
-                    <div className='cardButtonImageContainer'>
+                    <div className='card-button-image-container'>
                       <Link to="https://www.youtube.com/LabCA-UFRJ" target="_blank" rel="noopener noreferrer">
                         <img src={youtube} alt='YouTube'></img>
                       </Link>
                     </div>
 
-                    <div className='cardButtonImageContainer'>
+                    <div className='card-button-image-container'>
                       <Link to="https://www.tiktok.com/@extensao_labca" target="_blank" rel="noopener noreferrer">
                         <img src={tiktok} alt='TikTok'></img>
                       </Link>
                     </div>
 
-                    <div className='cardButtonImageContainer'>
+                    <div className='card-button-image-container'>
                     <Link to="https://www.linktr.ee/labca" target="_blank" rel="noopener noreferrer">
                       <img src={green} alt='LinkTree'></img>
                     </Link>

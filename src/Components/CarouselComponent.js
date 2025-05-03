@@ -13,7 +13,8 @@ const CarouselComponent = ({image, text, buttonText, buttonWidth, buttonHeight, 
         <div className='carousel-buttons'>
             <p className='lab-ca'>LabCA</p>
             <StaticButton 
-                text={buttonText + " →"} 
+                text={buttonText + " →"}
+                fontSize="0.88rem"
                 buttonWidth={buttonWidth} 
                 buttonHeight={buttonHeight} 
                 buttonBorderRadius={buttonBorderRadius}
