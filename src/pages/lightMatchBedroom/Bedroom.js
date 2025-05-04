@@ -6,15 +6,16 @@ import './Bedroom.css';
 import ResultsButton from '../../Components/ResultsButton/ResultsButton';
 import InputOption from '../../Components/InputOption/InputOption';
 import InputSize from '../../Components/InputSize/InputSize';
-import MainPageHeader from '../../Components/LogoLumos/MainPageHeader'
-import NavBar from '../../Components/NavBar/NavBar'
+import MainPageHeader from '../../Components/LogoLumos/MainPageHeader';
+import NavBar from '../../Components/NavBar/NavBar';
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Bedroom = () => {
-
+  const navigate = useNavigate();
   
-  function getInformation() {
+  function getResult() {
    
     const info = {
       NumberOfPointLight: NumberOfPointLight,
@@ -23,11 +24,10 @@ const Bedroom = () => {
       AmountOfDarkSurface: AmountOfDarkSurface,
       DescriptionLuminaria: document.getElementsByClassName("custom-select")[0].value,
       DescriptionAge: document.getElementsByClassName("custom-select")[1].value,
+      Ambient: 'Bedroom',
     }
 
-    console.log(info);
-  
-    return info;
+    navigate('/calcular', { state: { info } });
   }
 
 
@@ -67,7 +67,7 @@ const Bedroom = () => {
         <InputAmountLarge amount={AmountOfDarkSurface} setAmount={setAAmountOfDarkSurface} HaveInfo={true} TypeOfInput={"Quantidade de superfícies escuras"}/>
         <InputOption nameOfInput={InputOption2.titulo} optionsArray={InputOption2.opcoes}/>
         
-        <div id='divbotao' onClick={getInformation}>
+        <div id='divbotao' onClick={getResult}>
           <ResultsButton />
         </div>
       </form >
