@@ -2,6 +2,8 @@ import './Result.css';
 import React from 'react';
 import plus from '../../Assets/Images/plus.png';
 import { Link } from 'react-router-dom';
+import imgLamp1 from '../../Assets/Images/imgLamp1.png';
+import imgLamp2 from '../../Assets/Images/imgLamp2.png';
 
 const Result = ({angle, irc, lumen, temperature}) => {
     const texts = [
@@ -61,7 +63,7 @@ const Result = ({angle, irc, lumen, temperature}) => {
                 </div>
                 <div className='result-screen-card'>
                     <p className='result-screen-temperature'>Temperatura de Cor</p>
-                    <p className='result-screen-temperature-text'>{temperature}</p>
+                    <img src={temperature === '2700K a 4000K' ? imgLamp1 : imgLamp2}/>
                 </div>
             </div>
             <div className='result-screen-text'>
