@@ -7,7 +7,8 @@
     position: sticky;
     bottom: 3%;
     width: 92vw;
-    height: 4.5rem;
+    height: 8vh;
+    min-height: 4.5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;

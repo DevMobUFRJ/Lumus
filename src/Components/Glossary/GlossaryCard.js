@@ -14,7 +14,7 @@ const GlossaryCard = ({width, height, padding, borderRadius, border, upperText, 
     return (
       
       <div className='glossary-card-container'
-        style={{width: width, maxHeight: height, borderRadius: borderRadius, border: border, padding: padding}}
+        style={{width: width, maxHeight: height, borderRadius: borderRadius, padding: padding}}
         ref={contentRef}
       >
         <div className='glossary-card'>
@@ -37,7 +37,7 @@ const GlossaryCard = ({width, height, padding, borderRadius, border, upperText, 
             </div>
 
             <div className='dropdown-image-container'>
-                <img src={dropdownImg} alt='' style={{height: '5rem', width: '5rem'}} />
+                <img src={dropdownImg} alt='' id='dropdown-image' />
             </div>
         </div>
       </div>

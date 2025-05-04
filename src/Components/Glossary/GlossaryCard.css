@@ -5,6 +5,7 @@
     background-size: 'cover';
     background-position: 'center';
     overflow: hidden;
+    border: 2px solid #DBD7CE;
 }
 
 .glossary-card {
@@ -34,9 +35,11 @@
 }
 
 .glossary-dropdown {
-    border: 1px solid gray;
-    width: 2.4rem;
-    height: 2.4rem;
+    border: 3px solid #DBD7CE;
+    min-width: 2.4rem;
+    min-height: 2.4rem;
+    width: 5vw;
+    height: 5vw;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -49,7 +52,8 @@
 }
 
 .glossary-dropdown-button {
-    width: 1.5rem;
+    min-width: 1.5rem;
+    width: 3vw;
 }
 
 .dropdown-content {
@@ -68,6 +72,7 @@
 .dropdown-text {
     opacity: 0.2;
     transition: 0.5s ease, opacity 0.5s ease;
+    font-size: 1.9vh;
 }
 
 .dropdown-text.open {
@@ -76,6 +81,17 @@
 
 .dropdown-image-container {
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#dropdown-image {
+    height: 12vw;
+    width: 12vw;
+    min-height: 5rem;
+    min-width: 5rem;
 }
 
 .glossary-page-cards {
@@ -93,11 +109,12 @@
 }
 
 #glossary-card-upper-text {
-    font-size: 1.3rem;
+    font-size: 2.3vh;
     opacity: 0.9;
 }
 
 #glossary-card-bottom-text {
+    font-size: 1.9vh;
     color: #E28E00;
     margin-top: 0.5rem;
 }
