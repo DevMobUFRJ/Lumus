@@ -15,6 +15,8 @@ import Room from './pages/lightMatchRoom/Room';
 import Bedroom from './pages/lightMatchBedroom/Bedroom';
 import Glossary from './Components/Glossary/Glossary';
 import Result from './pages/lightMatchResult/Result';
+import CalcResult from './Components/CalcResultLightMatch/CalcResult';
+import { useLocation } from 'react-router-dom';
 
 const cardData = [
   {
@@ -95,6 +97,15 @@ const Home = () => {
   );
 };
 
+const ResultWrapper = () => {
+  const location = useLocation();
+  const { angle, irc, lumen, temperature } = location.state;
+
+  return (
+    <Result angle={angle} irc={irc} lumen={lumen} temperature={temperature} />
+  );
+};
+
 const App = () => {
   return (
     <Router>
@@ -123,9 +134,10 @@ const App = () => {
             exit={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.5 }}
           >
-            <Result />
+            <ResultWrapper />
           </motion.div>
         </AnimatePresence>} />
+        <Route path="/calcular" element={<CalcResult />} />
       </Routes>
     </Router>
   );

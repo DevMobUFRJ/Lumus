@@ -42,7 +42,7 @@
   /* Parágrafos de texto */
   .result-screen-text {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
     text-align: justify;
     color: #5A524F;
@@ -79,8 +79,6 @@
   
   .result-screen-card p {
     margin: 0;
-    font-size: 14px;
-    color: #756559;
   }
   
   .result-screen-angle,
@@ -96,8 +94,8 @@
   .result-screen-irc-text,
   .result-screen-lumen-text,
   .result-screen-temperature-text {
-    font-weight: 600;
-    font-size: 17px;
+    font-weight: 500;
+    font-size: 23 px;
     color: #000;
   }
   
