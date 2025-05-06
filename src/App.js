@@ -116,7 +116,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/Faq" element={<Faq />} />
           <Route path="/glossario" element={<Glossary />} />
-          <Route path="/Sala" element={<Room/>} />
+          <Route path="/sala" element={<Room/>} />
           <Route path="/cozinha" element={<Kitchen/>} />
           <Route path="/quarto" element={<Bedroom/>} />
           <Route path="/luz-geral" element={<AnimatePresence mode='wait'>
@@ -130,7 +130,7 @@ const App = () => {
                 </motion.div>
               </AnimatePresence>} />
           <Route path="/home" element={<HomePage />} />
-          <Route path="/Result" element={<AnimatePresence mode='wait'>
+          <Route path="/result" element={<AnimatePresence mode='wait'>
             <motion.div
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
