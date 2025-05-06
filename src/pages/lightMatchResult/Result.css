@@ -1,5 +1,3 @@
-/* Result.css */
-
 .result-screen {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 24px 16px;
@@ -8,7 +6,7 @@
     line-height: 1.5;
   }
   
-  /* Header com título e botão de fechar */
+
   .result-screen-header {
     display: flex;
     justify-content: space-between;
@@ -38,8 +36,7 @@
     border: 1px solid #DBD7CE;
     padding: 6px;
   }
-  
-  /* Parágrafos de texto */
+
   .result-screen-text {
     margin-top: 10px;
     font-size: 15px;
@@ -47,8 +44,7 @@
     text-align: justify;
     color: #5A524F;
   }
-  
-  /* Grid dos cards */
+
   .result-screen-grid {
     display: flex;
     flex-direction: column;
@@ -57,13 +53,11 @@
     margin-bottom: 30px;
   }
   
-  /* Subgrupo de IRC e Lúmen */
   .resul-screen-cards-asset {
     display: flex;
     gap: 12px;
   }
   
-  /* Estilo dos cards */
   .result-screen-card {
     flex: 1;
     background-color: #FFFFFF;
@@ -98,8 +92,7 @@
     font-size: 23 px;
     color: #000;
   }
-  
-  /* Temperatura de Cor com ícones */
+
   .temperature-section {
     padding: 16px;
     border: 1px solid #E5DED6;
@@ -134,7 +127,6 @@
     text-align: center;
   }
   
-  /* Observação */
   .result-screen-obs {
     margin-top: 24px;
     font-weight: 400;
@@ -142,7 +134,6 @@
     color: #000;
   }
   
-  /* Responsividade */
   @media (min-width: 600px) {
     .result-screen-grid {
       flex-direction: row;

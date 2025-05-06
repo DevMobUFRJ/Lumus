@@ -1,4 +1,3 @@
-// src/pages/Faq.js
 import arrowLeft from '../Assets/Images/ArrowLeft.png'
 import plus from '../Assets/Images/plus.png'
 import { useNavigate } from 'react-router-dom';
@@ -15,7 +14,7 @@ const Faq = () => {
   };
 
   const handleBackClick = () => {
-    navigate('/home');  // Navega para a rota raiz "/"
+    navigate('/home');
   };
 
 
