@@ -26,8 +26,8 @@ const Glossary = () => {
             <div className='glossary-page-cards'>
                 <GlossaryCard 
                     width='100%'
-                    height='40rem'
-                    dropdownHeight='30rem'
+                    height='60rem'
+                    dropdownHeight='50rem'
                     padding='0.8rem'
                     borderRadius='1.3rem'
                     upperText='Fluxo Luminoso'
@@ -50,8 +50,8 @@ const Glossary = () => {
 
                 <GlossaryCard 
                     width='100%'
-                    height='55rem'
-                    dropdownHeight='45rem'
+                    height='70rem'
+                    dropdownHeight='60rem'
                     padding='0.8rem'
                     borderRadius='1.3rem'
                     upperText='Intensidade Luminosa'
