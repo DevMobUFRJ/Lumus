@@ -6,7 +6,7 @@
 }
 
 #DivReader h3{
-    font-size: 1.5rem;
+    font-size: 6vw;
     margin-bottom: 0.6rem;
 }
 
@@ -16,20 +16,22 @@
     overflow-x: scroll;
     scrollbar-width: none; 
     gap: 5%;
-    width: 100vw;
+    width: 100%;
     padding: 0% 6% 0% 0%;
-    
-
-
 }
 
-#buttons button{
+.buttons-room-button {
     border-radius: 99px;
-    height: 2.8rem;
+    min-height: 2.8rem;
+    height: 5vh;
+    min-width: 10rem;
+    width: 15vw;
     border: none;
     outline: none;
-
     font-weight: 600;
-    width: 47%;
-    flex-shrink: 0; /* Impede que os botões encolham */
+    flex-shrink: 0;
+}
+
+.buttons-room-button-link {
+    font-size: 3.7vw;
 }

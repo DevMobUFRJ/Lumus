@@ -11,6 +11,10 @@
     flex-shrink: 0;
 }
 
+.divPrincipalTitulo {
+    font-size: 4vw;
+}
+
 #divDescricao{
     display: flex;
     flex-direction: row;
@@ -36,8 +40,8 @@
 }
 
 #iconInfo{
-    width: 26px;
-    height: 26px;
+    width: 5vw;
+    height: 5vw;
 }
 
 .sinais{

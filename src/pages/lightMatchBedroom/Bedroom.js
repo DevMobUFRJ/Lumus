@@ -48,33 +48,36 @@ const Bedroom = () => {
 
 
   return (
-    <div id='divLightMatch'>
-        <MainPageHeader />
-        
-        <div id='divButtonRoom'>
-            <ButtonRoom colorRoom={false} colorKitchen={false} corBedroom={true}/>
-        </div>
+    <div className='container-light-match'>
+      <MainPageHeader />
 
-        <h3 className='infoComodo'>Informações sobre o cômodo</h3>
+      <div id='divLightMatch'>
+          
+          <div id='divButtonRoom'>
+              <ButtonRoom colorRoom={false} colorKitchen={false} colorBedroom={true}/>
+          </div>
 
-      <form name="valform" id='formData'>
-        <div id="divSizeAndAmount"> 
-        <InputAmount TypeOfInput={"Nº de pontos de luz"} amount={NumberOfPointLight} setAmount={setNumberOfPointLight} />
-        <InputSize />
-        </div>
-        <InputAmountLarge amount={AmountOfLampsPerPoint} setAmount={setAmountOfLampsPerPoint} HaveInfo={false} TypeOfInput={"Quantidade de lâmpadas por ponto"}/>
-        <InputOption nameOfInput={InputOption1.titulo} optionsArray={InputOption1.opcoes}/>
-        <InputAmountLarge amount={AmountOfDarkSurface} setAmount={setAAmountOfDarkSurface} HaveInfo={true} TypeOfInput={"Quantidade de superfícies escuras"}/>
-        <InputOption nameOfInput={InputOption2.titulo} optionsArray={InputOption2.opcoes}/>
-        
-        <div id='divbotao' onClick={getResult}>
-          <ResultsButton />
-        </div>
-      </form >
+          <h3 className='infoComodo'>Informações sobre o cômodo</h3>
 
-      <NavBar colorFaq={false} colorGlossario={false} colorHome={false} colorLightMatch={true}/>
+        <form name="valform" id='formData'>
+          <div id="divSizeAndAmount"> 
+          <InputAmount TypeOfInput={"Nº de pontos de luz"} amount={NumberOfPointLight} setAmount={setNumberOfPointLight} />
+          <InputSize />
+          </div>
+          <InputAmountLarge amount={AmountOfLampsPerPoint} setAmount={setAmountOfLampsPerPoint} HaveInfo={false} TypeOfInput={"Quantidade de lâmpadas por ponto"}/>
+          <InputOption nameOfInput={InputOption1.titulo} optionsArray={InputOption1.opcoes}/>
+          <InputAmountLarge amount={AmountOfDarkSurface} setAmount={setAAmountOfDarkSurface} HaveInfo={true} TypeOfInput={"Quantidade de superfícies escuras"}/>
+          <InputOption nameOfInput={InputOption2.titulo} optionsArray={InputOption2.opcoes}/>
+          
+          <div id='divbotao' onClick={getResult}>
+            <ResultsButton />
+          </div>
+        </form >
+
+        <NavBar colorFaq={false} colorGlossario={false} colorHome={false} colorLightMatch={true}/>
 
 
+      </div>
     </div>
   );
 };

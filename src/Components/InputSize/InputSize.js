@@ -13,7 +13,7 @@ const InputSize = ({ TypeOfInput, amount, setAmount, size, setSize }) => {
     <div id="divPrincipalInputSize">
 
         <div id="divDescricao">
-          <h3>Tamanho</h3>
+          <h3 className='divPrincipalTitulo'>Tamanho</h3>
           <img src={infoIcon} id="iconInfo" alt="Info"/>
         </div>
         <div id="divInputSize">

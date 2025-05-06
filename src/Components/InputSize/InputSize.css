@@ -11,8 +11,8 @@
 }
 
 #iconInfo{
-    width: 26px;
-    height: 26px;
+    width: 5vw;
+    height: 5vw;
 }
 
 #inputSize{
@@ -26,6 +26,10 @@
     justify-content: space-around;
     align-items: center;
     outline: none;
+}
+
+.divPrincipalTitulo {
+    font-size: 4vw;
 }
 
 #divInputSize{
