@@ -16,7 +16,7 @@
     position: absolute;
     object-fit: cover;
     width: 30vw;
-    z-index: 0; /* atrás do modal */
+    z-index: 0;
   }
   
   .modal {
@@ -27,7 +27,7 @@
     max-width: 90%;
     text-align: center;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1; /* à frente do bgVector */
+    z-index: 1;
   }
   
   .icon {
