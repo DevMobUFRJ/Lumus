@@ -40,7 +40,7 @@ const TopLanding = () => {
 
         <div className='board-box'>
           <div id='top-boards'>
-          <Link to="/Sala" style={{ textDecoration: 'none', width:'100%', color: 'inherit', marginRight: '1rem' }}>
+          <Link to="/sala" style={{ textDecoration: 'none', width:'100%', color: 'inherit', marginRight: '1rem' }}>
             <Board
               backgroundColor="#FEB800"
               width="100%"

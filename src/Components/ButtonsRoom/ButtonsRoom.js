@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 
             <div id='buttons'>
                 <button className='buttons-room-button' style={{ backgroundColor: colorRoom ? '#F8E6B7' : 'white' , border: colorRoom ? 'none': '2.6px solid #DBD7CE'}}> 
-                    <Link className='buttons-room-button-link' to='/Sala' style={{textDecoration: 'none', color: "black"}}>
+                    <Link className='buttons-room-button-link' to='/sala' style={{textDecoration: 'none', color: "black"}}>
                         Sala 
                     </Link>
                 </button>

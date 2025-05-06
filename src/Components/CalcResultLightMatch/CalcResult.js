@@ -31,7 +31,7 @@ const CalcResult = () => {
     const lmi = (lux * size) / (info.NumberOfPointLight * info.AmountOfLampsPerPoint * fd);
     const lumen = Math.floor(lmi);
 
-    navigate('/Result', {
+    navigate('/result', {
       state: {
         angle: 'Maior ou igual a 120°',
         irc: '80 RA',

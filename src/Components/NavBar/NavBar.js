@@ -26,7 +26,7 @@ const NavBar = ({ colorHome, colorFaq, colorLightMatch, colorGlossario }) => {
         </button>
 
         <button className="nav-button nav-button-center" style={{backgroundColor: colorLightMatch ? '#F9E4B2' : 'white' }}>
-          <Link to="/Sala">
+          <Link to="/sala">
             <img src={IconLightMatch} alt="Light Match" style={{iconStyle}} className={`nav-icon ${colorLightMatch ? 'icon-active' : ''}`}/>
           </Link>
         </button>

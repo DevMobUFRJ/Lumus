@@ -46,32 +46,35 @@ const Kitchen = () => {
 
 
   return (
-    <div id='divLightMatch'>
-        <MainPageHeader />
-        
-        <div id='divButtonRoom'>
-            <ButtonRoom colorRoom={false} colorKitchen={true} corBedroom={false}/>
-        </div>
+    <div className='container-light-match'>
+      <MainPageHeader />
+      
+      <div id='divLightMatch'>
+          
+          <div id='divButtonRoom'>
+              <ButtonRoom colorRoom={false} colorKitchen={true} corBedroom={false}/>
+          </div>
 
-        <h3 className='infoComodo'>Informações sobre o cômodo</h3>
+          <h3 className='infoComodo'>Informações sobre o cômodo</h3>
 
-      <form name="valform" id='formData'>
-        <div id="divSizeAndAmount"> 
-        <InputAmount TypeOfInput={"Nº de pontos de luz"} amount={NumberOfPointLight} setAmount={setNumberOfPointLight} />
-        <InputSize />
-        </div>
-        <InputAmountLarge amount={AmountOfLampsPerPoint} setAmount={setAmountOfLampsPerPoint} HaveInfo={false} TypeOfInput={"Quantidade de lâmpadas por ponto"}/>
-        <InputOption nameOfInput={InputOption1.titulo} optionsArray={InputOption1.opcoes}/>
-        <InputOption nameOfInput={InputOption2.titulo} optionsArray={InputOption2.opcoes}/>
-        
-        <div id='divbotao' onClick={getResult}>
-          <ResultsButton />
-        </div>
-      </form >
+        <form name="valform" id='formData'>
+          <div id="divSizeAndAmount"> 
+          <InputAmount TypeOfInput={"Nº de pontos de luz"} amount={NumberOfPointLight} setAmount={setNumberOfPointLight} />
+          <InputSize />
+          </div>
+          <InputAmountLarge amount={AmountOfLampsPerPoint} setAmount={setAmountOfLampsPerPoint} HaveInfo={false} TypeOfInput={"Quantidade de lâmpadas por ponto"}/>
+          <InputOption nameOfInput={InputOption1.titulo} optionsArray={InputOption1.opcoes}/>
+          <InputOption nameOfInput={InputOption2.titulo} optionsArray={InputOption2.opcoes}/>
+          
+          <div id='divbotao' onClick={getResult}>
+            <ResultsButton />
+          </div>
+        </form >
 
-      <NavBar colorFaq={false} colorGlossario={false} colorHome={false} colorLightMatch={true}/>
+        <NavBar colorFaq={false} colorGlossario={false} colorHome={false} colorLightMatch={true}/>
 
 
+      </div>
     </div>
   );
 };
