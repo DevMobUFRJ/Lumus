@@ -30,7 +30,6 @@ const Glossary = () => {
                     dropdownHeight='30rem'
                     padding='0.8rem'
                     borderRadius='1.3rem'
-                    border='1px solid gray'
                     upperText='Fluxo Luminoso'
                     bottomText='Lúmen (Lm)'
                     dropdownImg={dropdown1}
@@ -43,7 +42,6 @@ const Glossary = () => {
                     dropdownHeight='30rem'
                     padding='0.8rem'
                     borderRadius='1.3rem'
-                    border='1px solid gray'
                     upperText='Fluxo Energético ou Potência'
                     bottomText='Watts (w)'
                     dropdownImg={dropdown2}
@@ -52,11 +50,10 @@ const Glossary = () => {
 
                 <GlossaryCard 
                     width='100%'
-                    height='45rem'
-                    dropdownHeight='35rem'
+                    height='55rem'
+                    dropdownHeight='45rem'
                     padding='0.8rem'
                     borderRadius='1.3rem'
-                    border='1px solid gray'
                     upperText='Intensidade Luminosa'
                     bottomText='Candela (Cd)'
                     dropdownImg={dropdown3}
@@ -65,11 +62,10 @@ const Glossary = () => {
 
                 <GlossaryCard 
                     width='100%'
-                    height='50rem'
-                    dropdownHeight='40rem'
+                    height='80rem'
+                    dropdownHeight='70rem'
                     padding='0.8rem'
                     borderRadius='1.3rem'
-                    border='1px solid gray'
                     upperText='Temperatura de Cor ou Aparência da Cor da Emissão da Luz'
                     bottomText='Kelvin (K)'
                     dropdownImg={dropdown4}
@@ -82,7 +78,6 @@ const Glossary = () => {
                     dropdownHeight='30rem'
                     padding='0.8rem'
                     borderRadius='1.3rem'
-                    border='1px solid gray'
                     upperText='Índice de Reprodução de Cor ou IRC'
                     bottomText='RA'
                     dropdownImg={dropdown5}

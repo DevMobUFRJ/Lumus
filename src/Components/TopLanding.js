@@ -7,14 +7,10 @@ import lightMatch from '../Assets/Images/nav-lightmatch.svg';
 import glossario from '../Assets/Images/nav-glossario.svg';
 import faq from '../Assets/Images/nav-faq.svg';
 import './Home.css';
-import Card from './Card';
-import MainPageHeader from './LogoLumos/MainPageHeader';
 
 const TopLanding = () => {
   return (
     <div className='top-landing-container'>
-        <MainPageHeader />
-        
         <div className='card-container'
           style={{
             backgroundImage: `url(${lampVector})`,
@@ -23,7 +19,7 @@ const TopLanding = () => {
             backgroundRepeat: 'no-repeat',
             borderRadius: '1.4rem',
             overflow: 'hidden',
-            width: '100%',
+            width: '100%'
         }}>
             <div className='card'>
                 <p className='card-text'>Conheça o projeto <b id="card-text_top_landing">Atitudes Sustentáveis!</b></p>
@@ -31,8 +27,9 @@ const TopLanding = () => {
                 style={{marginTop: '-0.6rem'}}>
                   <StaticButton 
                     text="Saiba mais →" 
-                    buttonWidth="9rem" 
-                    buttonHeight="3rem" 
+                    fontSize="4vw"
+                    buttonWidth="45%" 
+                    buttonHeight="90%" 
                     buttonBorderRadius="2rem" 
                     backgroundColor="#FEB800" 
                     buttonBorder="none"
@@ -46,7 +43,7 @@ const TopLanding = () => {
           <Link to="/Sala" style={{ textDecoration: 'none', width:'100%', color: 'inherit', marginRight: '1rem' }}>
             <Board
               backgroundColor="#FEB800"
-              width="11rem"
+              width="100%"
               height="11.5rem"
               borderRadius="1.4rem"
               border="none"
@@ -62,7 +59,7 @@ const TopLanding = () => {
           <Link to="/glossario" style={{ textDecoration: 'none', width:'100%', color: 'inherit' }}>
             <Board
               backgroundColor="white"
-              width="11rem"
+              width="100%"
               height="11.5rem"
               borderRadius="1.4rem"
               border="3px solid #FEB800"

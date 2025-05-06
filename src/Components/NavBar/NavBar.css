@@ -1,14 +1,14 @@
 #navBar {
-
-  margin-top: 7%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
+    margin-top: 7%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     position: sticky;
     bottom: 3%;
     width: 92vw;
-    height: 4.5rem;
+    height: 8vh;
+    min-height: 4.5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;

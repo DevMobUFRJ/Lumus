@@ -4,7 +4,6 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-/* Container principal */
 .faq-container {
     width: 100%;
     box-sizing: border-box;
@@ -13,7 +12,6 @@ body {
     background-color: #f9f9f9;
   }
   
-  /* Estilos do cabeçalho */
   .faq-header {
     display: flex;
     align-items: center;
@@ -24,7 +22,7 @@ body {
   }
   
   .faq-header .back-button {
-    width: 32px; /* Tamanho da seta */
+    width: 32px;
     cursor: pointer;
     caret-color: transparent;
   }
@@ -45,7 +43,6 @@ body {
     margin-right: 24px;
   }
   
-  /* Estilo dos itens de FAQ */
   .faq-item {
     border-bottom: 1px solid #e0e0e0;
     padding: 15px 0;
@@ -81,25 +78,22 @@ body {
     transition: transform 0.6s ease; 
 }
 .rotated {
-    transform: rotate(45deg); /* Rotaciona a imagem 180 graus */
+    transform: rotate(45deg);
 }
 
-
-/* Conteúdo da resposta */
 .content {
   opacity: 0;
   max-height: 0;
   overflow: hidden;
-  transition: opacity 0.4s ease, max-height 0.4s ease-in-out; /* Suavizar ambas as transições */
+  transition: opacity 0.4s ease, max-height 0.4s ease-in-out;
 }
 
-/* Quando a resposta está expandida */
 .content.expanded {
   opacity: 1;
   max-height: 100%;
   font-size: 16px;
   color: #756559;
-  transition: opacity 0.4s ease, max-height 0.4s ease-in-out; /* Suavizar ambas as transições */
+  transition: opacity 0.4s ease, max-height 0.4s ease-in-out;
 }
   
 .faq-item:last-child {
@@ -121,7 +115,6 @@ body {
   color: #999;
   }
   
-/* Estilos do ícone inferior */
 .bottom-icons {
   position: fixed;
   bottom: 10px;

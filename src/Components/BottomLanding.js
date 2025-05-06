@@ -5,8 +5,8 @@ import instagram from '../Assets/Images/instagram-logo.svg';
 import youtube from '../Assets/Images/youtube-logo.svg';
 import tiktok from '../Assets/Images/tiktok-logo.svg';
 import green from '../Assets/Images/green-logo.svg';
-import lampCarousel from '../Assets/Images/frame41.png';
 import Carousel from './Carousel';
+import { Link } from 'react-router-dom';
 
 const BottomLanding = ({
     marginTop
@@ -21,8 +21,8 @@ const BottomLanding = ({
         />
 
         <div className='text-container' id='carousel-link'>
-          <p style={{textDecoration: 'underline'}}>Ver todos</p>
-          <p>→</p>
+          <p style={{textDecoration: 'underline', fontSize: '3.8vw'}}>Ver todos</p>
+          <p style={{fontSize: '3.8vw'}}>→</p>
         </div>
 
         <div className='card-container'
@@ -36,29 +36,38 @@ const BottomLanding = ({
             width: '100%',
         }}>
             <div className='card'>
-                <p className='card-text' style={{fontSize: '1.5rem'}}>Acompanhe nossas redes sociais!</p>
+                <p className='card-text' style={{fontSize: '5.7vw'}}>Acompanhe nossas redes sociais!</p>
                 <div id='lamp-card-buttons-container'>
-                    <div className='cardButtonImageContainer'>
-                      <img src={instagram}></img>
+                    <div className='card-button-image-container'>
+                      <Link to="https://www.instagram.com/labca.ufrj/" target="_blank" rel="noopener noreferrer">
+                        <img src={instagram} alt='Instagram'></img>
+                      </Link>
                     </div>
                 
-                    <div className='cardButtonImageContainer'>
-                      <img src={youtube}></img>
+                    <div className='card-button-image-container'>
+                      <Link to="https://www.youtube.com/LabCA-UFRJ" target="_blank" rel="noopener noreferrer">
+                        <img src={youtube} alt='YouTube'></img>
+                      </Link>
                     </div>
 
-                    <div className='cardButtonImageContainer'>
-                      <img src={tiktok}></img>
+                    <div className='card-button-image-container'>
+                      <Link to="https://www.tiktok.com/@extensao_labca" target="_blank" rel="noopener noreferrer">
+                        <img src={tiktok} alt='TikTok'></img>
+                      </Link>
                     </div>
 
-                    <div className='cardButtonImageContainer'>
-                      <img src={green}></img>
+                    <div className='card-button-image-container'>
+                    <Link to="https://www.linktr.ee/labca" target="_blank" rel="noopener noreferrer">
+                      <img src={green} alt='LinkTree'></img>
+                    </Link>
                     </div>
                 </div>
             </div>
           </div>
           <div id='bottom_logos'>
             <img src={bottomMainLogos}
-                style={{ width: '100%'}}/>
+                style={{ width: '100%'}}
+                alt='Logos'/>
           </div>
     </div>
 

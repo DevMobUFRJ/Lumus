@@ -8,6 +8,7 @@ const StaticButton = ({
   buttonHeight, 
   buttonBorderRadius, 
   text, 
+  fontSize,
   backgroundColor, 
   border,
   buttonBorder,
@@ -43,7 +44,7 @@ const StaticButton = ({
             style={{ width: '50%', marginBottom: '10px' }} 
           />
         ) : (
-          <div className="static_button_text" style={{ color: 'black' }}>
+          <div className="static_button_text" style={{ color: 'black', fontSize: fontSize }}>
             {text}
           </div>
         )}

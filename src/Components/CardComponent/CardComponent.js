@@ -27,12 +27,12 @@ const CardComponent = ({ image, title, description, color, onClick, isActive }) 
     >
       {isActive && (
         <>
-          <img src={image} alt={title} style={{ width: '100%', marginBottom: '10px' }} />
+          <img src={image} alt={title} style={{ width: '100%', maxWidth: '20rem', marginBottom: '10vh' }} />
           <div
-            style={{margin: '-150px 0 -40px 0'}}>
-            <img src={logo} alt='Lumos' style={{margin: '0 0 10px 0'}}/>
-            <h2 style={{ color: '#fff', textAlign: 'left', fontSize: '2rem', fontWeight: '400', width: '90%' }}>{title}</h2>
-            <p style={{ color: '#fff', textAlign: 'justify', fontSize: '1rem', fontWeight: '300', margin: '10px 0 0 0', width: '98%' }}>{description}</p>
+            style={{margin: '-150px 0 -40px 0', height: '20vh', maxHeight: '20rem', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end'}}>
+            <img src={logo} alt='Lumos' style={{margin: '0 0 10px 0', width: '20vw', maxWidth: '30rem'}}/>
+            <h2 style={{ color: '#fff', textAlign: 'left', fontSize: '6.4vw', fontWeight: '400', width: '90%' }}>{title}</h2>
+            <p style={{ color: '#fff', textAlign: 'justify', fontSize: '3.4vw', fontWeight: '300', margin: '10px 0 0 0', width: '98%' }}>{description}</p>
           </div>
         </>
       )}

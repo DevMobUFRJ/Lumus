@@ -3,7 +3,7 @@
     padding: 0;
     border: none;
     width: 100vw;
-    max-width: 100%;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,11 +15,19 @@
 
 .top-landing-container, .bottom-landing-container {
     width: 100%;
+    max-width: 100%;
+}
+
+#top-landing-header-container {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+    width: 100%;
 }
 
 .card-container {
     width: 100%;
-    height: 10rem;
+    height: 20vh;
     border-radius: 2rem;
     border: 0.05rem solid #d3d3d3;
     margin-top: 2rem;
@@ -27,27 +35,33 @@
 
 .card {
     width: 100%;
+    height: 85%;
     padding-left: 1rem;
     padding-right: 0.5rem;
     padding-top: 0.4rem;
     padding-bottom: 0.8rem;
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .button-container {
-    width: 100%;
+    width: 95%;
+    height: 45%;
     display: flex;
     align-items: center;
     justify-content: right;
 }
 
 .card-text {
-    font-size: 1.5rem;
+    font-size: 5.7vw;
     font-weight: 600;
 }
 
 #card-text_top_landing {
-    font-size: 1.5rem;
+    font-size: 5.7vw;
+    font-weight: 800;
 }
 
 .board-box {
@@ -134,14 +148,14 @@
     margin-top: 0.15rem;
 }
 
-.cardButtonImageContainer {
+.card-button-image-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #EEEEEE;
-    width: 2.8rem;
+    border: 1px solid #DBD7CE;
+    width: 5vh;
     border-radius: 5rem;
-    height: 2.8rem;
+    height: 5vh;
 }
 
 .board-image-container {
@@ -186,10 +200,10 @@
 
 #carousel-link {
     width: 100%;
-    height: 2rem;
+    height: 4vh;
     align-items: center;
     justify-content: flex-end;
-    margin-top: 1rem;
+    margin-top: 2vh;
 }
 
 #carousel-text {

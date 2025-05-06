@@ -7,7 +7,7 @@ const MainPageHeader = () => {
     return(
         <div id='container-main-page-header'>
             <Link to="/home">
-              <img id="main=page-header-image" src={mainPageHeader}/>
+              <img id="main-page-header-image" alt='Lumos' src={mainPageHeader}/>
             </Link>
         </div>
     );}
