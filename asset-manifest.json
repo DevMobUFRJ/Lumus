@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.d9b7e0cc.css",
-    "main.js": "./static/js/main.0e5f5f66.js",
+    "main.css": "./static/css/main.b8618798.css",
+    "main.js": "./static/js/main.b9b99b4a.js",
     "static/js/453.6a06673a.chunk.js": "./static/js/453.6a06673a.chunk.js",
     "static/media/Frame470.svg": "./static/media/Frame470.b71cb53d01d746be2eab39ce1684bebc.svg",
     "static/media/frame47.png": "./static/media/frame47.fff26cd2c2f416fe2625.png",
@@ -13,30 +13,32 @@
     "static/media/glossary-dropdown-4.svg": "./static/media/glossary-dropdown-4.449bcc22130b0ac6f04fa9ba169fb013.svg",
     "static/media/glossary-dropdown-3.svg": "./static/media/glossary-dropdown-3.72c24cefa5293ead24a54c1ae1df9978.svg",
     "static/media/glossary-dropdown-2.svg": "./static/media/glossary-dropdown-2.f18c9d3e3809d1f31c66b38a9227db05.svg",
-    "static/media/6082664-removebg-preview 1.png": "./static/media/6082664-removebg-preview 1.53548ac613e01c9fdd55.png",
+    "static/media/lampada_cortada.png": "./static/media/lampada_cortada.817b0f76f239e6166e98.png",
+    "static/media/imgLamp1.png": "./static/media/imgLamp1.2081bdf00eb8dfdd0126.png",
     "static/media/glossary-dropdown-1.svg": "./static/media/glossary-dropdown-1.a50b956086f160f0a131460861d5e5f9.svg",
+    "static/media/imgLamp2.png": "./static/media/imgLamp2.c41f028981f1a32d08cf.png",
     "service-worker.js": "./service-worker.js",
     "static/media/removal 4.png": "./static/media/removal 4.adbc74426389bb4a81d1.png",
     "static/media/JEMA_GER_1639-09-removebg-preview 1.png": "./static/media/JEMA_GER_1639-09-removebg-preview 1.ad8c376eb6ed6ea2ac67.png",
-    "static/media/Onboarding 1.png": "./static/media/Onboarding 1.336dc76f901259e18369.png",
-    "static/media/mainPageHeader.svg": "./static/media/mainPageHeader.975588e848a4d86aabe46722455af791.svg",
+    "static/media/Onboarding 1.png": "./static/media/Onboarding 1.dfd7fdf60d1564c3648e.png",
+    "static/media/bgVector.png": "./static/media/bgVector.e44e94c807e99c8e0884.png",
+    "static/media/mainPageHeader.svg": "./static/media/mainPageHeader.03521515aa5af391c9417e4091b1dd8d.svg",
     "static/media/instagram-logo.svg": "./static/media/instagram-logo.26b788b7f116addc73de2314d3d4a5bc.svg",
     "static/media/tiktok-logo.svg": "./static/media/tiktok-logo.15e41fe3efbbcfeb7df4ce10d5dbc534.svg",
     "static/media/nav-faq.svg": "./static/media/nav-faq.ead37219a31b36cb324f7a24c3d557c8.svg",
     "static/media/nav-lightmatch.svg": "./static/media/nav-lightmatch.afd3584e0b681ffc3fb923ea11bc4d69.svg",
     "static/media/nav-glossario.svg": "./static/media/nav-glossario.91695391ec3a1481828bbc8c7fece7b1.svg",
-    "static/media/nav-home.svg": "./static/media/nav-home.d39aac60dea2b04d4dacea907d15cdd4.svg",
     "static/media/youtube-logo.svg": "./static/media/youtube-logo.ec7a38929da9bca1ad92f92d99c8164e.svg",
     "static/media/Vector.svg": "./static/media/Vector.e74bc10c09588feda6a7a4ad7bda03a2.svg",
     "static/media/GlossaryDropdownButton.svg": "./static/media/GlossaryDropdownButton.6872c9d17ddb94a540245fecb484c815.svg",
     "index.html": "./index.html",
     "static/media/green-logo.svg": "./static/media/green-logo.8218539b71533789dea610c8e0897c83.svg",
-    "main.d9b7e0cc.css.map": "./static/css/main.d9b7e0cc.css.map",
-    "main.0e5f5f66.js.map": "./static/js/main.0e5f5f66.js.map",
+    "main.b8618798.css.map": "./static/css/main.b8618798.css.map",
+    "main.b9b99b4a.js.map": "./static/js/main.b9b99b4a.js.map",
     "453.6a06673a.chunk.js.map": "./static/js/453.6a06673a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9b7e0cc.css",
-    "static/js/main.0e5f5f66.js"
+    "static/css/main.b8618798.css",
+    "static/js/main.b9b99b4a.js"
   ]
 }
