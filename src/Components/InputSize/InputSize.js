@@ -7,7 +7,7 @@ function analisandoTamanho(event) {
   }
 }
 
-const InputSize = ({ TypeOfInput, amount, setAmount, size, setSize }) => {
+const InputSize = ({ }) => {
   return (
     
     <div id="divPrincipalInputSize">

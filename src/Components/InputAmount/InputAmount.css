@@ -5,7 +5,7 @@
 }
 
 #divPrincipalInputAmount{
-    width: 42%;
+    width: 46%;
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
@@ -13,6 +13,7 @@
 
 .divPrincipalTitulo {
     font-size: 4vw;
+    font-weight: 400;
 }
 
 #divDescricao{
@@ -32,11 +33,15 @@
     justify-content: space-around;
     align-items: center;
     height: 3rem;
+    width: 100%;
     border: 2.5px solid #DBD7CE;  
     border-radius: 50px;
     margin-top: 1%;
     overflow: hidden;
+}
 
+#divInput h3 {
+    font-weight: 400;
 }
 
 #iconInfo{

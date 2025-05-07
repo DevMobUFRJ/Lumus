@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
-#DivReader{
-    padding: 0% 4% 0% 4%;
-}
-
 #DivReader h3{
     font-size: 6vw;
+    font-weight: 500;
     margin-bottom: 0.6rem;
 }
 
@@ -15,23 +12,20 @@
     flex-direction: row;
     overflow-x: scroll;
     scrollbar-width: none; 
-    gap: 5%;
+    gap: 0.6rem;
     width: 100%;
-    padding: 0% 6% 0% 0%;
 }
 
 .buttons-room-button {
     border-radius: 99px;
     min-height: 2.8rem;
     height: 5vh;
-    min-width: 10rem;
+    min-width: 11rem;
     width: 15vw;
     border: none;
     outline: none;
     font-weight: 600;
     flex-shrink: 0;
-}
-
-.buttons-room-button-link {
     font-size: 3.7vw;
+    font-weight: 400;
 }
