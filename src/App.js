@@ -73,7 +73,13 @@ const Home = () => {
             isActive={index === currentIndex}
           />
         ))}
-        <div style={{ position: 'absolute', bottom: '12vw', right: '5vw' }}>
+        <div style={{ 
+          position: 'absolute', 
+          bottom: '11.5vh', 
+          left: '5vw',
+          fontSize: '0.9rem',
+          fontWeight: '400'}}>Lumos © 2024 All rights reserved</div>
+        <div style={{ position: 'absolute', bottom: '10vh', right: '5vw' }}>
           <motion.button
             onClick={handleNext}
             whileHover={{ scale: 1.1 }}
