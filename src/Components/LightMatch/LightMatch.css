@@ -3,57 +3,67 @@
 *{
     font-family: "Inter", sans-serif;
     font-size: 1rem;
-    font-weight: 600;
     font-optical-sizing: auto;
     font-style: normal;
     margin: 0;
     box-sizing: border-box;
 }
 
-#divButtonRoom{
-    margin-bottom: 1.5rem;
-}
-
-#divLightMatch{
-
-    height: 100vh;
-    overflow-y: scroll;
+.root-lightmatch {
+    width: 100vw;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
+.container-light-match {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     overflow-x: hidden;
+}
 
-    gap: 1rem;
-    
+#divButtonRoom{
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+#divLightMatch{
+    height: auto;
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 3vh;
 }
 
 form{
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
 }
 
 #divSizeAndAmount{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 7%;
 }
 
 .infoComodo{
     color: #AA9F8D;
-    position: relative;
-    right: 19%;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.5rem;
 }
 
 #divbotao{
     width: 100%;
     position: relative;
     left: 30%;
+    margin-top: 1rem;
 }

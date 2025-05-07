@@ -6,13 +6,12 @@
 }
 
 #divPrincipalInputSize{
-    width: 42%;
-    
+    width: 46%;
 }
 
 #iconInfo{
-    width: 26px;
-    height: 26px;
+    width: 5vw;
+    height: 5vw;
 }
 
 #inputSize{
@@ -28,6 +27,10 @@
     outline: none;
 }
 
+.divPrincipalTitulo {
+    font-size: 4vw;
+}
+
 #divInputSize{
     display: flex;
     flex-direction: row;
@@ -39,4 +42,8 @@
     margin-top: 1%;
     overflow: hidden;
     padding: 0 1rem 0 1rem;
+}
+
+#divInputSize h3 {
+    font-weight: 400;
 }

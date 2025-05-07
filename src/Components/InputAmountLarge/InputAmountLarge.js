@@ -8,7 +8,7 @@ const InputAmount = ({ HaveInfo, TypeOfInput, amount, setAmount }) => {
     <div id="divPrincipal">
       <div id="divDescricao">
         <h3>{TypeOfInput}</h3>
-        <img src={infoIcon} id="iconInfo" alt="Info" style={{display: HaveInfo ? 'block' : 'none'}} onClick={() => {console.log("teste")}}/>
+        <img src={infoIcon} id="iconInfo" alt="Info" style={{display: HaveInfo ? 'block' : 'none'}} />
       </div>
       <div id="divInputLarge">
         <h3 className="sinais" onClick={() => setAmount(Math.max(0, amount - 1))}>-</h3>

@@ -2,17 +2,64 @@
 
 .card-component {
     font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5rem 18px;
+    margin: 0 5px 15vh;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
   }
   
-  .card-component img {
+.card-component-image-container {
+  height: 30vh;
+  max-height: 40rem;
+  margin-top: auto;
+  margin-bottom: 45vw;
+}
+
+  .card-component-image {
+    width: 100%;
+    max-width: 20rem;
+    margin-bottom: 10vh;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
   }
   
-  .card-component h2 {
-    font-size: 1.5rem;
+  .card-component-text-section-container {
+    margin: -150px 0 -40px 0;
+    height: 60vw;
+    max-height: 15rem;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-end;
   }
-  
-  .card-component p {
-    font-size: 1rem;
+
+  #card-component-image-lumos {
+    margin: 0 0 10px 0;
+     width: 20vw;
+     max-width: 30rem;
+  }
+
+  #card-component-title {
+    color: #fff;
+    text-align: left;
+    font-size: 3vh;
+    font-weight: 400;
+    width: 90%
+  }
+
+  #card-component-paragraph {
+    color: #fff;
+    text-align: justify;
+    font-size: 1.5vh;
+    font-weight: 300;
+    margin: 10px 0 0 0;
+    width: 98%
   }

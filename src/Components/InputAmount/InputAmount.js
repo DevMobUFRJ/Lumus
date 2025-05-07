@@ -8,7 +8,7 @@ const InputAmount = ({ TypeOfInput, amount, setAmount, size, setSize }) => {
     <div id="divPrincipalInputAmount">
 
         <div id="divDescricao">
-          <h3>{TypeOfInput}</h3>
+          <h3 className='divPrincipalTitulo'>{TypeOfInput}</h3>
           <img src={infoIcon} id="iconInfo" alt="Info"/>
         </div>
         <div id="divInput">

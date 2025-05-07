@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { HashRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import CardComponent from './Components/CardComponent/CardComponent';
 import { motion, AnimatePresence } from 'framer-motion';
-import img1 from './Assets/Images/6082664-removebg-preview 1.png';
+import img1 from './Assets/Images/lampada_cortada.png';
 import img2 from './Assets/Images/removal 4.png';
 import img3 from './Assets/Images/JEMA_GER_1639-09-removebg-preview 1.png';
 import arrow from './Assets/Images/Vector.svg';
@@ -10,11 +10,11 @@ import './App.css';
 import HomePage from './Components/Home';
 import LuzGeral from './Components/LuzGeral';
 import Faq from './Components/Faq';
-import Kitchen from './pages/lightMatchKitchen/Kitchen';
-import Room from './pages/lightMatchRoom/Room';
-import Bedroom from './pages/lightMatchBedroom/Bedroom';
+import Kitchen from './Components/LightMatch/Kitchen';
+import Room from './Components/LightMatch/Room';
+import Bedroom from './Components/LightMatch/Bedroom';
 import Glossary from './Components/Glossary/Glossary';
-import Result from './pages/lightMatchResult/Result';
+import Result from './Components/LightMatchResult/Result';
 import CalcResult from './Components/CalcResultLightMatch/CalcResult';
 import { useLocation } from 'react-router-dom';
 import MobileOnlyModal from './Components/ModalMobileOnly/ModalMobileOnly';
@@ -73,7 +73,13 @@ const Home = () => {
             isActive={index === currentIndex}
           />
         ))}
-        <div style={{ position: 'absolute', bottom: '12vw', right: '5vw' }}>
+        <div style={{ 
+          position: 'absolute', 
+          bottom: '11.5vh', 
+          left: '5vw',
+          fontSize: '0.9rem',
+          fontWeight: '400'}}>Lumos © 2024 All rights reserved</div>
+        <div style={{ position: 'absolute', bottom: '10vh', right: '5vw' }}>
           <motion.button
             onClick={handleNext}
             whileHover={{ scale: 1.1 }}
@@ -116,7 +122,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/Faq" element={<Faq />} />
           <Route path="/glossario" element={<Glossary />} />
-          <Route path="/Sala" element={<Room/>} />
+          <Route path="/sala" element={<Room/>} />
           <Route path="/cozinha" element={<Kitchen/>} />
           <Route path="/quarto" element={<Bedroom/>} />
           <Route path="/luz-geral" element={<AnimatePresence mode='wait'>
@@ -130,7 +136,7 @@ const App = () => {
                 </motion.div>
               </AnimatePresence>} />
           <Route path="/home" element={<HomePage />} />
-          <Route path="/Result" element={<AnimatePresence mode='wait'>
+          <Route path="/result" element={<AnimatePresence mode='wait'>
             <motion.div
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}

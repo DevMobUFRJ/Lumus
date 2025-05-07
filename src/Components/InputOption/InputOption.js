@@ -18,7 +18,7 @@ const InputOption = ({nameOfInput, optionsArray}) => {
 
             </select>
 
-                <img src={setaSelect} id='setaSelect'/>
+            <img src={setaSelect} id='setaSelect'/>
         </div>
     )
 }

@@ -33,7 +33,7 @@ const Result = ({angle, irc, lumen, temperature}) => {
                 </div>
                 <div className='result-screen-close'>
                     <button>
-                        <Link to="/Sala">
+                        <Link to="/sala">
                             <img
                             src={plus}
                             alt="Fechar"
